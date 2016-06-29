@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1260px" height="11px" viewBox="0 0 1260 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>718CEFF9-B2A6-478F-8583-7834718A394F</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <pattern id="pattern-2" width="12" height="12" x="-12" y="-12" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-3" transform="scale(0.2,0.2)"></use>
+        </pattern>
+        <image id="image-3" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAA1teXP8meAAABIpJREFUaAXtl41t2zAQRpsuUCMLVBtUG0Qb1BtEG9QjuBu4G6gbqBsoGygbqAMkUCdI32fwDFmWbJrWjw34gA+UyCN5T0fS9MPHx8ena7X39/cFsSUodmVE+RV12T8qS1RIj4+PKg/s4dqAgRRcihL0DYWaPkCGNsBXlFu7CuAG5JKo+jLoQg4qftFrDXg9GzCQEUGkTmNAMvSeKePpw9vbW64H0e81j/Di9qSyuEKXLNfg6ASsU0v0K6Cz4JF6OjYgBfq9x22yagO2Cf/yoLWeWUVI6ZZrQt+rgGwytIGtTRnPUSHxASrKXgMwptGU8DzGclUyKlSiGrXN5j96HvQBtwfT+0tHZUTd0Qk6+vhWveJYmHzPmFNb6Bxg30Av8ftD51yQp1aVzyRua63xfTb/awBWJjco982iBe9bOvAM/ycBaz988e08kJ/2YyYNkUnfmABfCTjSxOgJjWl2EOqqV4450bGxdzct6Jc4amkNeQgZpJZrfiyQqdp2wDYh4AnPKdIHCFnq2pOC08FTUA5mxLZgsLhnwNpn5RwANwdz8ImbRJN1WUllhcohAR1cwriSIH23nH4+C6RVpdj27CjwnucEL0BGTLN08gU8Ftn2FwDwzJxmB25ApgQ1xg1NrAJfaQXqlF7wUKt2KnPLVZlM0RCZ9A39l4ArvFPR+/YK9QPUlutz6BiX9hPwhxvkN+Ua8OrSQZv9G5CCDTn1m8Nd/NwEtsEEvgG8tIpzSrdcE/pYNmeHbMbfBWztuv4VTlXXkndwMT5ShBI0xsGjQ6dCSoJUo7YpBlNvDMeA2wNO+a6PnaNC4mN3AdLUbSQiomWJVugr2tk1ARtkFrqddlSNB+BTXtdoCz438CiQwB0Y4Gsqt/+WSh561/xBz8sr/jFELpFJlZMZ0PH2pmX0zPxlxNn/MLaB1iPOc3To3dUS6AWeG7REQ4FfBWTzC+yArdKBC1r6bvWe5Qt+JdLJmnv28XLTcsQxQiq7rKayZN6iq9HqDoCtwUomSnjWJAura5Ul7/qdVjmYMe+SwRIUoyd0junDZ0jnRN3seBK46Tzm84Urqy80OyDXgFdymh0Y0JQ4lM1ztw9dvE3gui6v9TscD70cT4XhtkmKn0CHOiBPTav2V7t4/BS9T49QHyC1F1MkyL3rHu+TmQFrQt16tNYzvQxhDjJhrBR9Q7NbE9iCEfgG6YSrrNKnBHCBX+I0ayb74u0Cbvq+8lKiChWobQKMUeTKMbJoMSiObSxdiXDngsWxxLdz25wCpt/kZj8lOTPrAlOHROC204q+z83+1wK8gwRQoIMZ4BGDrdEWfG7g3wSis2JQSMY8MLfkMwFvaP1x4DFexQtDZ0ig9XjTHI4M9GJ703L0Ah/j0NHMOngydPbJT59Bbe9qCXjK6NITutSUSS3V2SGbIHvA1gB4xHOKEuQLL8ASFdLUy5U5vawTuN2TDxBTt2jXu/fyWuG64vUC7up4q3WfbzXw0LjvwKFf7lb63TN8K5kKjfOe4dAvdyv97hm+lUyFxnnPcOiXu5V+9wzfSqZC4/wPEEj0N/I0/LsAAAAASUVORK5CYII="></image>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Top-1260" transform="translate(0.000000, -128.000000)" fill="url(#pattern-2)">
+            <g id="Top" filter="url(#filter-1)">
+                <g id="Waves" transform="translate(0.000000, 128.000000)">
+                    <rect id="BG" x="0" y="0" width="1260" height="11"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

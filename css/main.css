@@ -18,7 +18,7 @@ ul {
 
 header .top-header {
   padding-top: 40px;
-  outline: 1px solid red; }
+  padding-bottom: 35px; }
   header .top-header .tel-wrapper {
     float: left;
     display: inline-block; }
@@ -30,6 +30,7 @@ header .top-header {
       font-family: AvenirNextDemi;
       font-size: 1.8125em; }
   header .top-header .logo-wrapper {
+    display: block;
     margin: 0 auto;
     width: 307px; }
     header .top-header .logo-wrapper img {
@@ -64,11 +65,12 @@ header .top-header {
       header .top-header .icon-wrapper .icon.bag .number {
         background-color: #ed6990; }
 header .bottom-header {
-  padding-top: 60px;
-  outline: 1px solid blue; }
+  padding: 30px 0 25px;
+  text-align: center;
+  background: url(../images/header-bg.svg) repeat-x center top; }
   header .bottom-header .menu {
-    width: 1253px;
-    margin: 0 auto; }
+    display: inline-block;
+    vertical-align: top; }
     header .bottom-header .menu li {
       margin: 0 36px; }
       header .bottom-header .menu li:last-child {
@@ -87,11 +89,16 @@ header .bottom-header {
         color: #ed6990; }
       header .bottom-header .menu a:hover, header .bottom-header .menu a:active, header .bottom-header .menu a:focus {
         text-decoration: none; }
-  header .bottom-header .search-wrapper .search-icon {
-    height: 22px;
-    width: 22px;
-    background: url(../images/search.svg) no-repeat center;
-    cursor: pointer; }
+  header .bottom-header .search-wrapper {
+    vertical-align: top;
+    display: inline-block;
+    width: 96px; }
+    header .bottom-header .search-wrapper .search-icon {
+      float: right;
+      height: 22px;
+      width: 22px;
+      background: url(../images/search.svg) no-repeat center;
+      cursor: pointer; }
 
 .section-slider .slide {
   height: 442px;
