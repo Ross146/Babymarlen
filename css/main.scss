@@ -1,0 +1,128 @@
+@import '_variables';
+
+body{
+  font-size: 16px;
+}
+
+.container-fluid{
+  max-width: 1920px;
+  padding: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li{
+    display: inline-block;
+  }
+}
+
+header{
+  .top-header{
+    padding-top: 40px;
+    outline: 1px solid red;
+    .tel-wrapper{
+      .text{
+        font-family: AvenirNextRegular;
+        font-size: em(18);
+        text-transform: uppercase;
+      }
+      .tel{
+        font-family: AvenirNextDemi;
+        font-size: em(29);
+      }
+    }
+    .logo-wrapper{
+      width: 307px;
+      margin: 0 auto;
+    }
+    .icon-wrapper{
+      padding-top: 10px;
+      display: inline-block;
+      float: right;
+      .icon{
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        margin-right: 15px;
+        vertical-align: top;
+        &.profile{
+          background: url(../images/profile.svg) no-repeat center bottom;
+        }
+        &.heart{
+          background: url(../images/bag.svg) no-repeat center bottom;
+        }
+        &.bag{
+          background: url(../images/heart.svg) no-repeat center bottom;
+          margin-right: 0;
+        }
+        .number{
+          border-radius: 10em;
+          display: inline-block;
+          float: right;
+          font-size: em(11);
+          padding: 0 3px;
+          font-family: AvenirNextMedium;
+        }
+        &.heart .number{
+          background-color: $medium-pink;
+        }
+        &.bag .number{
+          background-color: $faded-blue;
+        }
+      }
+    }
+  }
+  .bottom-header{
+    padding-top: 60px;
+    outline: 1px solid blue;
+    .menu{
+      width: 1253px;
+      margin: 0 auto;
+      li{
+        margin: 0 36px;
+        &:last-child{
+          margin-right: 0;
+        }
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+      a{
+        color: #000;
+        font-family: AvenirNextRegular;
+        font-size: em(18);
+        text-transform: uppercase;
+        letter-spacing: em(0.7);
+
+        &.blog{
+          color: $faded-blue;
+        }
+        &.sale{
+          color: $medium-pink;
+
+        }
+        &:hover, &:active, &:focus{
+          text-decoration: none;
+        }
+      }
+    }
+    .search-wrapper{
+      .search-icon{
+        height: 22px;
+        width: 22px;
+        background: url(../images/search.svg) no-repeat center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.section-slider{
+  .slide{
+    height: 442px;
+    background-image: linear-gradient(104deg, #f9eff7, #e4f4f3);
+  }
+}

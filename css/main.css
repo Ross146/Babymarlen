@@ -1,0 +1,91 @@
+body {
+  font-size: 16px; }
+
+.container-fluid {
+  max-width: 1920px;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  ul li {
+    display: inline-block; }
+
+header .top-header {
+  padding-top: 40px;
+  outline: 1px solid red; }
+  header .top-header .tel-wrapper .text {
+    font-family: AvenirNextRegular;
+    font-size: 1.125em;
+    text-transform: uppercase; }
+  header .top-header .tel-wrapper .tel {
+    font-family: AvenirNextDemi;
+    font-size: 1.8125em; }
+  header .top-header .logo-wrapper {
+    width: 307px;
+    margin: 0 auto; }
+  header .top-header .icon-wrapper {
+    padding-top: 10px;
+    display: inline-block;
+    float: right; }
+    header .top-header .icon-wrapper .icon {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      margin-right: 15px;
+      vertical-align: top; }
+      header .top-header .icon-wrapper .icon.profile {
+        background: url(../images/profile.svg) no-repeat center bottom; }
+      header .top-header .icon-wrapper .icon.heart {
+        background: url(../images/bag.svg) no-repeat center bottom; }
+      header .top-header .icon-wrapper .icon.bag {
+        background: url(../images/heart.svg) no-repeat center bottom;
+        margin-right: 0; }
+      header .top-header .icon-wrapper .icon .number {
+        border-radius: 10em;
+        display: inline-block;
+        float: right;
+        font-size: 0.6875em;
+        padding: 0 3px;
+        font-family: AvenirNextMedium; }
+      header .top-header .icon-wrapper .icon.heart .number {
+        background-color: #ed6990; }
+      header .top-header .icon-wrapper .icon.bag .number {
+        background-color: #7a92c6; }
+header .bottom-header {
+  padding-top: 60px;
+  outline: 1px solid blue; }
+  header .bottom-header .menu {
+    width: 1253px;
+    margin: 0 auto; }
+    header .bottom-header .menu li {
+      margin: 0 36px; }
+      header .bottom-header .menu li:last-child {
+        margin-right: 0; }
+      header .bottom-header .menu li:first-child {
+        margin-left: 0; }
+    header .bottom-header .menu a {
+      color: #000;
+      font-family: AvenirNextRegular;
+      font-size: 1.125em;
+      text-transform: uppercase;
+      letter-spacing: 0.04375em; }
+      header .bottom-header .menu a.blog {
+        color: #7a92c6; }
+      header .bottom-header .menu a.sale {
+        color: #ed6990; }
+      header .bottom-header .menu a:hover, header .bottom-header .menu a:active, header .bottom-header .menu a:focus {
+        text-decoration: none; }
+  header .bottom-header .search-wrapper .search-icon {
+    height: 22px;
+    width: 22px;
+    background: url(../images/search.svg) no-repeat center;
+    cursor: pointer; }
+
+.section-slider .slide {
+  height: 442px;
+  background-image: linear-gradient(104deg, #f9eff7, #e4f4f3); }
+
+/*# sourceMappingURL=main.css.map */

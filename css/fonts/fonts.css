@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "AvenirNextBold";
+  src: url("AvenirNext/AvenirNext-Bold/AvenirNext-Bold.eot");
+  src: url("AvenirNext/AvenirNext-Bold/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("AvenirNext/AvenirNext-Bold/AvenirNext-Bold.woff") format("woff"), url("AvenirNext/AvenirNext-Bold/AvenirNext-Bold.ttf") format("truetype"), url("AvenirNext/AvenirNext-Bold/AvenirNext-Bold.svg#AvenirNextBold") format("svg"); }
+@font-face {
+  font-family: "AvenirNextDemi";
+  src: url("AvenirNext/AvenirNext-Demi/AvenirNext-Demi.eot");
+  src: url("AvenirNext/AvenirNext-Demi/AvenirNext-Demi.eot?#iefix") format("embedded-opentype"), url("AvenirNext/AvenirNext-Demi/AvenirNext-Demi.woff") format("woff"), url("AvenirNext/AvenirNext-Demi/AvenirNext-Demi.ttf") format("truetype"), url("AvenirNext/AvenirNext-Demi/AvenirNext-Demi.svg#AvenirNextDemi") format("svg"); }
+@font-face {
+  font-family: "AvenirNextMedium";
+  src: url("AvenirNext/AvenirNext-Medium/AvenirNext-Medium.eot");
+  src: url("AvenirNext/AvenirNext-Medium/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("AvenirNext/AvenirNext-Medium/AvenirNext-Medium.woff") format("woff"), url("AvenirNext/AvenirNext-Medium/AvenirNext-Medium.ttf") format("truetype"), url("AvenirNext/AvenirNext-Medium/AvenirNext-Medium.svg#AvenirNextMedium") format("svg"); }
+@font-face {
+  font-family: "AvenirNextRegular";
+  src: url("AvenirNext/AvenirNext-Regular/AvenirNext-Regular.eot");
+  src: url("AvenirNext/AvenirNext-Regular/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("AvenirNext/AvenirNext-Regular/AvenirNext-Regular.woff") format("woff"), url("AvenirNext/AvenirNext-Regular/AvenirNext-Regular.ttf") format("truetype"), url("AvenirNext/AvenirNext-Regular/AvenirNext-Regular.svg#AvenirNextRegular") format("svg"); }
+
+/*# sourceMappingURL=fonts.css.map */

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="23px" viewBox="0 0 25 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>0306BA7C-2CEE-4F71-B79F-3809D733FA62</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Top-1260" transform="translate(-1090.000000, -50.000000)" fill="#000000">
+            <g id="Top" filter="url(#filter-1)">
+                <g id="Icons02" transform="translate(1051.000000, 47.000000)">
+                    <path d="M63.3597402,8.82290664 C62.6609655,5.30798845 60.1623166,3.04234841 56.943718,3.04234841 C55.1438438,3.04234841 53.1957446,3.78344562 51.2899954,5.18094321 C49.3630713,3.74109721 47.4149721,3 45.5939229,3 C42.3753243,3 39.8555003,5.28681424 39.1779006,8.84408085 C38.1615011,14.1164581 41.4224497,21.1251203 50.9723706,24.9364774 C51.0782455,24.9788258 51.1841205,25 51.2899954,25 C51.3958704,25 51.5017453,24.9788258 51.6076203,24.9364774 C61.1363662,21.0404235 64.3761398,14.0529355 63.3597402,8.82290664 L63.3597402,8.82290664 Z M51.2899954,23.2001925 C42.904699,19.7276227 40.0037253,13.6717998 40.8718999,9.16169394 C41.3800997,6.47256978 43.2434989,4.71511068 45.5939229,4.71511068 C47.1820472,4.71511068 48.9607464,5.4773821 50.7394457,6.93840231 C51.0570705,7.19249278 51.5017453,7.19249278 51.8193702,6.93840231 C53.5980694,5.51973051 55.3555937,4.7786333 56.943718,4.7786333 C59.294142,4.7786333 61.1363662,6.49374398 61.665741,9.16169394 C62.5339156,13.6294514 59.6541168,19.6641001 51.2899954,23.2001925 L51.2899954,23.2001925 Z" id="heart"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

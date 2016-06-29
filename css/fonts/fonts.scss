@@ -1,0 +1,23 @@
+@mixin font-face($style-name, $file, $family, $category:"") {
+  $filepath: $family + "/" + $file;
+  @font-face {
+    font-family: "#{$style-name}";
+    src: url($filepath + ".eot");
+    src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf") format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+  }
+  %#{$style-name} {
+    font: {
+      @if $category != "" {
+        family: "#{$style-name}", #{$category};
+      } @else {
+        family: "#{$style-name}";
+        weight: normal;
+      }
+    }
+  }
+}
+
+@include font-face('AvenirNextBold', 'AvenirNext-Bold/AvenirNext-Bold', 'AvenirNext', 'serif');
+@include font-face('AvenirNextDemi', 'AvenirNext-Demi/AvenirNext-Demi', 'AvenirNext', 'serif');
+@include font-face('AvenirNextMedium', 'AvenirNext-Medium/AvenirNext-Medium', 'AvenirNext', 'serif');
+@include font-face('AvenirNextRegular', 'AvenirNext-Regular/AvenirNext-Regular', 'AvenirNext', 'serif');

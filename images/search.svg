@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>F6A68233-C5F3-4B01-8116-B07FD73CC8FE</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Top-1260" transform="translate(-1219.000000, -158.000000)" fill="#000000">
+            <g id="Top" filter="url(#filter-1)">
+                <g id="Menu" transform="translate(113.000000, 156.000000)">
+                    <path d="M1114.1717,18.3433995 C1116.1648,18.3433995 1117.9767,17.6367558 1119.38999,16.4408973 L1125.73167,22.7825712 C1125.87662,22.9275237 1126.05781,23 1126.25712,23 C1126.45643,23 1126.63762,22.9275237 1126.78257,22.7825712 C1127.07248,22.4926661 1127.07248,22.0215703 1126.78257,21.7316652 L1120.4409,15.3899914 C1121.61864,13.9767041 1122.3434,12.1466782 1122.3434,10.1716997 C1122.3434,5.66005177 1118.68335,2 1114.1717,2 C1109.67817,2 1106,5.67817084 1106,10.1716997 C1106,14.6833477 1109.67817,18.3433995 1114.1717,18.3433995 L1114.1717,18.3433995 Z M1114.1717,3.48576359 C1117.86799,3.48576359 1120.85764,6.4935289 1120.85764,10.1716997 C1120.85764,13.8679896 1117.86799,16.8576359 1114.1717,16.8576359 C1110.47541,16.8576359 1107.48576,13.8498706 1107.48576,10.1716997 C1107.48576,6.4935289 1110.49353,3.48576359 1114.1717,3.48576359 L1114.1717,3.48576359 Z" id="Search02"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
