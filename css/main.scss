@@ -2,11 +2,16 @@
 
 body{
   font-size: 16px;
+  line-height: 1;
 }
 
 .container-fluid{
   max-width: 1920px;
   padding: 0;
+}
+
+.center-block{
+  float: none;
 }
 
 ul{
@@ -23,6 +28,8 @@ header{
     padding-top: 40px;
     outline: 1px solid red;
     .tel-wrapper{
+      float: left;
+      display: inline-block;
       .text{
         font-family: AvenirNextRegular;
         font-size: em(18);
@@ -34,11 +41,14 @@ header{
       }
     }
     .logo-wrapper{
-      width: 307px;
       margin: 0 auto;
+      width: 307px;
+      img{
+        width: 100%;
+      }
     }
     .icon-wrapper{
-      padding-top: 10px;
+      padding-top: 5px;
       display: inline-block;
       float: right;
       .icon{
@@ -46,17 +56,17 @@ header{
         width: 28px;
         height: 28px;
         cursor: pointer;
-        margin-right: 15px;
+        margin-right: 12px;
         vertical-align: top;
         &.profile{
           background: url(../images/profile.svg) no-repeat center bottom;
         }
         &.heart{
           background: url(../images/bag.svg) no-repeat center bottom;
+          margin-right: 0;
         }
         &.bag{
           background: url(../images/heart.svg) no-repeat center bottom;
-          margin-right: 0;
         }
         .number{
           border-radius: 10em;
@@ -67,10 +77,10 @@ header{
           font-family: AvenirNextMedium;
         }
         &.heart .number{
-          background-color: $medium-pink;
+          background-color: $faded-blue;
         }
         &.bag .number{
-          background-color: $faded-blue;
+          background-color: $medium-pink;
         }
       }
     }

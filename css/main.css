@@ -1,9 +1,13 @@
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1; }
 
 .container-fluid {
   max-width: 1920px;
   padding: 0; }
+
+.center-block {
+  float: none; }
 
 ul {
   margin: 0;
@@ -15,18 +19,23 @@ ul {
 header .top-header {
   padding-top: 40px;
   outline: 1px solid red; }
-  header .top-header .tel-wrapper .text {
-    font-family: AvenirNextRegular;
-    font-size: 1.125em;
-    text-transform: uppercase; }
-  header .top-header .tel-wrapper .tel {
-    font-family: AvenirNextDemi;
-    font-size: 1.8125em; }
+  header .top-header .tel-wrapper {
+    float: left;
+    display: inline-block; }
+    header .top-header .tel-wrapper .text {
+      font-family: AvenirNextRegular;
+      font-size: 1.125em;
+      text-transform: uppercase; }
+    header .top-header .tel-wrapper .tel {
+      font-family: AvenirNextDemi;
+      font-size: 1.8125em; }
   header .top-header .logo-wrapper {
-    width: 307px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 307px; }
+    header .top-header .logo-wrapper img {
+      width: 100%; }
   header .top-header .icon-wrapper {
-    padding-top: 10px;
+    padding-top: 5px;
     display: inline-block;
     float: right; }
     header .top-header .icon-wrapper .icon {
@@ -34,15 +43,15 @@ header .top-header {
       width: 28px;
       height: 28px;
       cursor: pointer;
-      margin-right: 15px;
+      margin-right: 12px;
       vertical-align: top; }
       header .top-header .icon-wrapper .icon.profile {
         background: url(../images/profile.svg) no-repeat center bottom; }
       header .top-header .icon-wrapper .icon.heart {
-        background: url(../images/bag.svg) no-repeat center bottom; }
-      header .top-header .icon-wrapper .icon.bag {
-        background: url(../images/heart.svg) no-repeat center bottom;
+        background: url(../images/bag.svg) no-repeat center bottom;
         margin-right: 0; }
+      header .top-header .icon-wrapper .icon.bag {
+        background: url(../images/heart.svg) no-repeat center bottom; }
       header .top-header .icon-wrapper .icon .number {
         border-radius: 10em;
         display: inline-block;
@@ -51,9 +60,9 @@ header .top-header {
         padding: 0 3px;
         font-family: AvenirNextMedium; }
       header .top-header .icon-wrapper .icon.heart .number {
-        background-color: #ed6990; }
-      header .top-header .icon-wrapper .icon.bag .number {
         background-color: #7a92c6; }
+      header .top-header .icon-wrapper .icon.bag .number {
+        background-color: #ed6990; }
 header .bottom-header {
   padding-top: 60px;
   outline: 1px solid blue; }
