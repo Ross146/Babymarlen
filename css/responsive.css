@@ -1,0 +1,18 @@
+@media screen and (max-width: 1560px) {
+  header .bottom-header .menu a, header .bottom-header .menu .search-wrapper {
+    margin: 0 10px; } }
+@media screen and (max-width: 1500px) {
+  header .bottom-header .menu {
+    justify-content: space-between; } }
+@media screen and (max-width: 1280px) {
+  header .bottom-header {
+    padding: 30px 8% 25px;
+    margin-right: -65px; } }
+@media screen and (max-width: 1010px) {
+  header .bottom-header {
+    padding: 30px 25px 25px;
+    margin-right: 0; }
+  header .top-header {
+    padding: 40px 25px 35px; } }
+
+/*# sourceMappingURL=responsive.css.map */
