@@ -4,7 +4,8 @@ body {
 
 .container-main {
   max-width: 1920px;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
 
 ul {
   margin: 0;
@@ -94,56 +95,69 @@ header .bottom-header {
         cursor: pointer; }
 
 .section-slider .slide {
-  height: 442px;
-  background-image: linear-gradient(104deg, #f9eff7, #e4f4f3); }
-.section-slider .slide1 .text-container {
-  height: 376px;
-  background-color: #f2f6f7;
-  margin-top: 66px;
+  height: 442px; }
+.section-slider .slide1 {
+  background-image: linear-gradient(104deg, #f9eff7, #e4f4f3);
   position: relative; }
-  .section-slider .slide1 .text-container:after {
+  .section-slider .slide1:after {
     content: '';
+    height: 93%;
+    width: 298px;
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 22%;
-    background: url(../images/waves.svg) 50% 50%; }
-  .section-slider .slide1 .text-container .text-wrapper {
-    width: 288px;
-    margin: 0 auto;
-    padding-top: 29px; }
-    .section-slider .slide1 .text-container .text-wrapper .text-head {
-      font-family: AvenirNextDemi;
-      text-transform: uppercase;
-      font-size: 2.25em; }
-    .section-slider .slide1 .text-container .text-wrapper .text-percent {
-      font-family: AvenirNextMedium;
-      font-size: 7.125em;
-      margin-left: -45px; }
-    .section-slider .slide1 .text-container .text-wrapper a {
-      font-family: AvenirNextRegular;
-      margin-top: 10px;
-      font-size: 1.375em;
-      text-align: center;
-      display: inline-block;
-      width: 220px;
-      line-height: 47px;
-      border: 1px solid black;
-      border-radius: 3px;
-      color: #000;
-      text-transform: uppercase; }
-      .section-slider .slide1 .text-container .text-wrapper a:hover, .section-slider .slide1 .text-container .text-wrapper a:active, .section-slider .slide1 .text-container .text-wrapper a:focus {
+    right: 21%;
+    background: url(../images/slide-bg.png) no-repeat;
+    background-size: contain; }
+  .section-slider .slide1 .text-container {
+    position: absolute;
+    height: 83%;
+    background-color: #f2f6f7;
+    margin-top: 66px;
+    width: 33%;
+    bottom: 0;
+    left: 8%; }
+    .section-slider .slide1 .text-container:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 22%;
+      background: url(../images/waves.svg) center top;
+      background-size: cover; }
+    .section-slider .slide1 .text-container .text-wrapper {
+      width: 68%;
+      margin: 0 auto;
+      padding-top: 29px; }
+      .section-slider .slide1 .text-container .text-wrapper .text-head {
+        font-family: AvenirNextDemi;
+        text-transform: uppercase;
+        font-size: 2.25em; }
+      .section-slider .slide1 .text-container .text-wrapper .text-percent {
+        font-family: AvenirNextMedium;
+        font-size: 7.125em;
+        margin-left: -45px; }
+      .section-slider .slide1 .text-container .text-wrapper a {
+        font-family: AvenirNextRegular;
+        margin-top: 10px;
+        font-size: 1.375em;
+        text-align: center;
+        display: inline-block;
+        width: 220px;
+        line-height: 47px;
+        border: 1px solid black;
+        border-radius: 3px;
+        color: #000;
+        text-transform: uppercase;
         text-decoration: none; }
-.section-slider .slide1 .right-img {
-  width: 298px;
-  margin: 22px auto 0;
-  display: block; }
+        .section-slider .slide1 .text-container .text-wrapper a:hover, .section-slider .slide1 .text-container .text-wrapper a:active, .section-slider .slide1 .text-container .text-wrapper a:focus {
+          text-decoration: none; }
 .section-slider.owl-carousel .owl-controls .owl-dots {
   text-align: center;
   padding: 5px 0; }
   .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot {
-    display: inline-block; }
+    display: inline-block;
+    margin-right: 10px; }
     .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot span {
       width: 12px;
       height: 12px;
@@ -152,7 +166,7 @@ header .bottom-header {
       border-radius: 10em; }
     .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot.active span {
       background-color: #9b9b9b; }
-    .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot:first-child {
-      margin-right: 10px; }
+    .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */

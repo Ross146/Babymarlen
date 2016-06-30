@@ -1,18 +1,64 @@
 @media screen and (max-width: 1560px) {
   header .bottom-header .menu a, header .bottom-header .menu .search-wrapper {
-    margin: 0 10px; } }
+    margin: 0 8px; } }
 @media screen and (max-width: 1500px) {
   header .bottom-header .menu {
     justify-content: space-between; } }
 @media screen and (max-width: 1280px) {
   header .bottom-header {
     padding: 30px 8% 25px;
-    margin-right: -65px; } }
+    margin-right: -65px; }
+
+  .section-slider .slide1 .text-container {
+    left: 0; }
+  .section-slider .slide1:after {
+    right: 16%; } }
+@media screen and (max-width: 1150px) {
+  .section-slider .slide1 .text-container .text-wrapper .text-head {
+    font-size: 1.875em; }
+  .section-slider .slide1 .text-container .text-wrapper .text-percent {
+    font-size: 5.625em;
+    margin-left: -25px; } }
 @media screen and (max-width: 1010px) {
   header .bottom-header {
     padding: 30px 25px 25px;
     margin-right: 0; }
   header .top-header {
     padding: 40px 25px 35px; } }
+@media screen and (max-width: 960px) {
+  header .bottom-header .menu a {
+    font-size: 1em; } }
+@media screen and (max-width: 900px) {
+  header .top-header {
+    padding: 24px 8% 18px; }
+    header .top-header .tel-wrapper .text {
+      font-size: 0.6875em; }
+    header .top-header .tel-wrapper .tel {
+      font-size: 1.0625em; }
+    header .top-header .logo-wrapper {
+      width: 188px; }
+  header .bottom-header {
+    padding: 17px 0 20px 20px; }
+    header .bottom-header .menu a {
+      font-size: 0.875em; }
+
+  .section-slider .slide {
+    height: 270px; }
+  .section-slider .slide1 .text-container {
+    width: 35%; }
+    .section-slider .slide1 .text-container .text-wrapper {
+      width: 60%;
+      padding-top: 20px; }
+      .section-slider .slide1 .text-container .text-wrapper .text-head {
+        font-size: 1.25em; }
+      .section-slider .slide1 .text-container .text-wrapper .text-percent {
+        font-size: 4.125em;
+        margin-left: -25px; }
+      .section-slider .slide1 .text-container .text-wrapper a {
+        font-size: 16px;
+        width: 134px;
+        line-height: 34px; }
+  .section-slider .slide1:after {
+    width: 180px; } }
 
 /*# sourceMappingURL=responsive.css.map */

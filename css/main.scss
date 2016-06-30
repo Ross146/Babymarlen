@@ -8,6 +8,7 @@ body{
 .container-main{
   max-width: 1920px;
   width: 100%;
+  margin: 0 auto;
 }
 
 ul{
@@ -128,15 +129,29 @@ header {
 .section-slider{
   .slide{
     height: 442px;
-    background-image: linear-gradient(104deg, #f9eff7, #e4f4f3);
 
   }
   .slide1{
+    background-image: linear-gradient(104deg, #f9eff7, #e4f4f3);
+    position: relative;
+    &:after{
+      content: '';
+      height: 93%;
+      width: 298px;
+      position: absolute;
+      bottom: 0;
+      right: 21%;
+      background: url(../images/slide-bg.png) no-repeat;
+      background-size: contain;
+    }
     .text-container{
-      height: 376px;
+      position: absolute;
+      height: 83%;
       background-color: $grey-blue;
       margin-top: 66px;
-      position: relative;
+      width: 33%;
+      bottom: 0;
+      left: 8%;
       &:after{
         content: '';
         position: absolute;
@@ -144,11 +159,11 @@ header {
         left: 0;
         width: 100%;
         height: 22%;
-        background: url(../images/waves.svg) 50% 50%;
-
+        background: url(../images/waves.svg) center top;
+        background-size: cover ;
       }
       .text-wrapper{
-        width: 288px;
+        width: 68%;
         margin:0 auto;
         padding-top: 29px;
         .text-head{
@@ -173,16 +188,12 @@ header {
           border-radius: 3px;
           color: #000;
           text-transform: uppercase;
+          text-decoration: none;
           &:hover, &:active, &:focus{
             text-decoration: none;
           }
         }
       }
-    }
-    .right-img{
-      width: 298px;
-      margin: 22px auto 0;
-      display: block;
     }
   }
   &.owl-carousel .owl-controls .owl-dots{
@@ -190,6 +201,7 @@ header {
     padding: 5px 0;
     .owl-dot{
       display: inline-block;
+      margin-right: 10px;
       span{
         width: 12px;
         height: 12px;
@@ -200,8 +212,8 @@ header {
       &.active span{
         background-color: #9b9b9b;
       }
-      &:first-child{
-        margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
       }
     }
   }
