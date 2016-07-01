@@ -19,11 +19,11 @@ header .top-header {
     display: inline-block; }
     header .top-header .tel-wrapper .text {
       font-family: AvenirNextRegular;
-      font-size: 1.125em;
+      font-size: 18px;
       text-transform: uppercase; }
     header .top-header .tel-wrapper .tel {
       font-family: AvenirNextDemi;
-      font-size: 1.8125em; }
+      font-size: 29px; }
   header .top-header .logo-wrapper {
     display: block;
     margin: 0 auto;
@@ -52,7 +52,7 @@ header .top-header {
         border-radius: 10em;
         display: inline-block;
         float: right;
-        font-size: 0.6875em;
+        font-size: 11px;
         padding: 0 3px;
         font-family: AvenirNextMedium; }
       header .top-header .icon-wrapper .icon.heart .number {
@@ -73,7 +73,7 @@ header .bottom-header {
     header .bottom-header .menu a {
       color: #000;
       font-family: AvenirNextRegular;
-      font-size: 1.125em;
+      font-size: 18px;
       text-transform: uppercase;
       letter-spacing: 0.04375em;
       text-decoration: none;
@@ -132,15 +132,15 @@ header .bottom-header {
       .section-slider .slide1 .text-container .text-wrapper .text-head {
         font-family: AvenirNextDemi;
         text-transform: uppercase;
-        font-size: 2.25em; }
+        font-size: 36px; }
       .section-slider .slide1 .text-container .text-wrapper .text-percent {
         font-family: AvenirNextMedium;
-        font-size: 7.125em;
+        font-size: 114px;
         margin-left: -45px; }
       .section-slider .slide1 .text-container .text-wrapper a {
         font-family: AvenirNextRegular;
         margin-top: 10px;
-        font-size: 1.375em;
+        font-size: 22px;
         text-align: center;
         display: inline-block;
         width: 220px;
@@ -152,21 +152,145 @@ header .bottom-header {
         text-decoration: none; }
         .section-slider .slide1 .text-container .text-wrapper a:hover, .section-slider .slide1 .text-container .text-wrapper a:active, .section-slider .slide1 .text-container .text-wrapper a:focus {
           text-decoration: none; }
-.section-slider.owl-carousel .owl-controls .owl-dots {
-  text-align: center;
-  padding: 5px 0; }
-  .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot {
-    display: inline-block;
-    margin-right: 10px; }
-    .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot span {
-      width: 12px;
-      height: 12px;
-      border: 1px solid #9b9b9b;
+.section-slider.owl-carousel .owl-controls {
+  position: absolute;
+  width: 100%; }
+  .section-slider.owl-carousel .owl-controls .owl-dots {
+    text-align: center;
+    padding: 5px 0; }
+    .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot {
       display: inline-block;
-      border-radius: 10em; }
-    .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot.active span {
-      background-color: #9b9b9b; }
-    .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot:last-child {
-      margin-right: 0; }
+      margin-right: 10px; }
+      .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot span {
+        width: 12px;
+        height: 12px;
+        border: 1px solid #9b9b9b;
+        display: inline-block;
+        border-radius: 10em; }
+      .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot.active span {
+        background-color: #9b9b9b; }
+      .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot:last-child {
+        margin-right: 0; }
+
+.section-main {
+  background-color: #fffbf9;
+  padding-top: 65px;
+  min-height: 200px; }
+  .section-main:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .section-main .news {
+    float: right;
+    width: 16.7%;
+    background-color: #fff;
+    box-sizing: border-box; }
+    .section-main .news .news-item {
+      height: 102px;
+      margin-bottom: 29px; }
+      .section-main .news .news-item:nth-child(3) {
+        margin-bottom: 0; }
+      .section-main .news .news-item:last-child {
+        display: none; }
+      .section-main .news .news-item .img-wrapper {
+        height: 100%;
+        float: left;
+        margin-right: 5px; }
+        .section-main .news .news-item .img-wrapper img {
+          height: 100%; }
+      .section-main .news .news-item .text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        max-height: 122px;
+        overflow: hidden; }
+        .section-main .news .news-item .text div {
+          font-size: 15px;
+          font-family: AvenirNextRegular;
+          text-transform: uppercase; }
+        .section-main .news .news-item .text .head {
+          font-size: 16px;
+          font-family: AvenirNextDemi; }
+  .section-main .catalog-filter {
+    width: 83.3%;
+    font-size: 0;
+    display: inline-block; }
+    .section-main .catalog-filter .catalog-filter-item {
+      box-sizing: border-box;
+      padding: 0 10px;
+      display: inline-block;
+      width: 20%;
+      height: 238px; }
+      .section-main .catalog-filter .catalog-filter-item .wrap-bg {
+        height: 100%;
+        background-position: center;
+        background-size: auto 100%;
+        position: relative; }
+        .section-main .catalog-filter .catalog-filter-item .wrap-bg .text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.3);
+          color: #ffffff;
+          text-align: center;
+          line-height: 62px;
+          font-size: 24px;
+          font-family: AvenirNextMedium;
+          text-transform: uppercase; }
+          .section-main .catalog-filter .catalog-filter-item .wrap-bg .text:after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: 0;
+            width: 100%;
+            height: 22px;
+            background: url("../images/section-main-waves.svg") no-repeat center top;
+            background-size: auto 75%; }
+      .section-main .catalog-filter .catalog-filter-item:first-child {
+        margin-left: -10px; }
+      .section-main .catalog-filter .catalog-filter-item.boys .wrap-bg {
+        background-image: url(../images/section-main-kids-1.png); }
+      .section-main .catalog-filter .catalog-filter-item.girls .wrap-bg {
+        background-image: url(../images/section-main-kids-1.png); }
+      .section-main .catalog-filter .catalog-filter-item.baby .wrap-bg {
+        background-image: url(../images/section-main-kids-1.png); }
+      .section-main .catalog-filter .catalog-filter-item.age2-6 .wrap-bg {
+        background-image: url(../images/section-main-kids-1.png); }
+      .section-main .catalog-filter .catalog-filter-item.age6-16 .wrap-bg {
+        background-image: url(../images/section-main-kids-1.png); }
+      .section-main .catalog-filter .catalog-filter-item.age0-1 {
+        display: none; }
+        .section-main .catalog-filter .catalog-filter-item.age0-1 .wrap-bg {
+          background-image: url(../images/section-main-kids-1.png); }
+  .section-main .brands-carousel {
+    width: 83.3%;
+    display: inline-block;
+    margin-top: 45px;
+    background-color: #fff; }
+    .section-main .brands-carousel .brands-carousel-container {
+      margin: 0 auto;
+      width: calc(100% - 222px);
+      font-size: 0; }
+      .section-main .brands-carousel .brands-carousel-container .brand-item {
+        display: block;
+        height: 76px;
+        background: url("../images/dolce-gabbana.svg") no-repeat center;
+        background-size: contain;
+        margin: 0 25px; }
+      .section-main .brands-carousel .brands-carousel-container.owl-carousel .owl-controls .owl-nav {
+        position: relative;
+        width: 100%; }
+        .section-main .brands-carousel .brands-carousel-container.owl-carousel .owl-controls .owl-nav div {
+          position: absolute;
+          top: -60px;
+          width: 22px;
+          height: 40px; }
+        .section-main .brands-carousel .brands-carousel-container.owl-carousel .owl-controls .owl-nav .owl-prev {
+          left: -60px;
+          background: url(../images/slide-arrow-prev.svg) no-repeat center; }
+        .section-main .brands-carousel .brands-carousel-container.owl-carousel .owl-controls .owl-nav .owl-next {
+          right: -60px;
+          background: url(../images/slide-arrow-next.svg) no-repeat center; }
 
 /*# sourceMappingURL=main.css.map */

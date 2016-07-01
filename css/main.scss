@@ -25,12 +25,12 @@ header {
       display: inline-block;
       .text {
         font-family: AvenirNextRegular;
-        font-size: em(18);
+        font-size: 18px;
         text-transform: uppercase;
       }
       .tel {
         font-family: AvenirNextDemi;
-        font-size: em(29);
+        font-size: 29px;
       }
     }
     .logo-wrapper {
@@ -66,7 +66,7 @@ header {
           border-radius: 10em;
           display: inline-block;
           float: right;
-          font-size: em(11);
+          font-size: 11px;
           padding: 0 3px;
           font-family: AvenirNextMedium;
         }
@@ -94,7 +94,7 @@ header {
       a {
         color: #000;
         font-family: AvenirNextRegular;
-        font-size: em(18);
+        font-size: 18px;
         text-transform: uppercase;
         letter-spacing: em(0.7);
         text-decoration: none;
@@ -169,17 +169,17 @@ header {
         .text-head{
           font-family: AvenirNextDemi;
           text-transform: uppercase;
-          font-size: em(36);
+          font-size: 36px;
         }
         .text-percent{
           font-family: AvenirNextMedium;
-          font-size: em(114);
+          font-size: 114px;
           margin-left: -45px
         }
         a{
           font-family: AvenirNextRegular;
           margin-top: 10px;
-          font-size: em(22);
+          font-size: 22px;
           text-align: center;
           display: inline-block;
           width: 220px;
@@ -196,24 +196,180 @@ header {
       }
     }
   }
-  &.owl-carousel .owl-controls .owl-dots{
-    text-align: center;
-    padding: 5px 0;
-    .owl-dot{
-      display: inline-block;
-      margin-right: 10px;
-      span{
-        width: 12px;
-        height: 12px;
-        border: 1px solid #9b9b9b;
+  &.owl-carousel .owl-controls{
+    position: absolute;
+    width: 100%;
+    .owl-dots{
+      text-align: center;
+      padding: 5px 0;
+      .owl-dot{
         display: inline-block;
-        border-radius: 10em;
+        margin-right: 10px;
+        span{
+          width: 12px;
+          height: 12px;
+          border: 1px solid #9b9b9b;
+          display: inline-block;
+          border-radius: 10em;
+        }
+        &.active span{
+          background-color: #9b9b9b;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
       }
-      &.active span{
-        background-color: #9b9b9b;
+    }
+  }
+}
+
+
+.section-main{
+  background-color: #fffbf9;
+  padding-top: 65px;
+  min-height: 200px;
+  @include clearfix;
+  .news{
+    float: right;
+    width: 16.7%;
+    background-color: #fff;
+    box-sizing: border-box;
+    .news-item{
+      height: 102px;
+      margin-bottom: 29px;
+      &:nth-child(3){
+        margin-bottom: 0;
       }
       &:last-child{
-        margin-right: 0;
+        display: none;
+      }
+      .img-wrapper{
+        height: 100%;
+        float: left;
+        margin-right:5px;
+        img{
+          height: 100%;
+        }
+      }
+      .text{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        max-height: 122px;
+        overflow: hidden;
+        div{
+          font-size: 15px;
+          font-family: AvenirNextRegular;
+          text-transform: uppercase;
+        }
+        .head{
+          font-size:16px;
+          font-family: AvenirNextDemi;
+        }
+      }
+    }
+  }
+  .catalog-filter{
+    width: 83.3%;
+    font-size: 0;
+    display: inline-block;
+    .catalog-filter-item{
+      box-sizing: border-box;
+      padding: 0 10px;
+      display: inline-block;
+      width: 20%;
+      height: 238px;
+      .wrap-bg{
+        height: 100%;
+        background-position: center;
+        background-size: auto 100%;
+        position: relative;
+        .text{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: rgba(0,0,0,.3);
+          color: #ffffff;
+          text-align: center;
+          line-height: 62px;
+          font-size: 24px;
+          font-family: AvenirNextMedium;
+          text-transform: uppercase;
+          &:after{
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: 0;
+            width: 100%;
+            height: 22px;
+            background: url("../images/section-main-waves.svg") no-repeat center top;
+            background-size: auto 75%;
+          }
+        }
+      }
+      &:first-child{
+        margin-left: -10px;
+      }
+      &.boys .wrap-bg{
+        background-image: url(../images/section-main-kids-1.png);
+      }
+      &.girls .wrap-bg{
+        background-image: url(../images/section-main-kids-1.png);
+      }
+      &.baby .wrap-bg{
+        background-image: url(../images/section-main-kids-1.png);
+      }
+      &.age2-6 .wrap-bg{
+        background-image: url(../images/section-main-kids-1.png);
+      }
+      &.age6-16 .wrap-bg{
+        background-image: url(../images/section-main-kids-1.png);
+      }
+      &.age0-1{
+        display: none;
+        .wrap-bg{
+          background-image: url(../images/section-main-kids-1.png);
+        }
+      }
+    }
+  }
+  .brands-carousel{
+    width: 83.3%;
+    display: inline-block;
+    margin-top: 45px;
+    background-color: #fff;
+    .brands-carousel-container{
+      margin: 0 auto;
+      width: calc(100% - 222px);
+      font-size:0;
+      .brand-item{
+        display: block;
+        height: 76px;
+        background: url("../images/dolce-gabbana.svg") no-repeat center;
+        background-size: contain;
+        margin: 0 25px;
+      }
+      &.owl-carousel .owl-controls{
+
+        .owl-nav{
+          position: relative;
+          width: 100%;
+          div{
+            position: absolute;
+            top: -60px;
+            width: 22px;
+            height: 40px;
+          }
+          .owl-prev{
+            left: -60px;
+            background: url(../images/slide-arrow-prev.svg) no-repeat center;
+          }
+          .owl-next{
+            right: -60px;
+            background: url(../images/slide-arrow-next.svg) no-repeat center;
+          }
+        }
       }
     }
   }

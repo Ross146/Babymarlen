@@ -4,6 +4,14 @@ $browser-context: 16; // Default
   @return #{$pixels/$context}em;
 }
 
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 //basic colors
 $denim: #3b517a;
 $faded-blue: #7a92c6;

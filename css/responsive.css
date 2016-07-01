@@ -1,6 +1,25 @@
 @media screen and (max-width: 1560px) {
   header .bottom-header .menu a, header .bottom-header .menu .search-wrapper {
-    margin: 0 8px; } }
+    margin: 0 8px; }
+
+  .section-main .catalog-filter {
+    width: 75%; }
+    .section-main .catalog-filter .catalog-filter-item {
+      margin-bottom: 35px;
+      width: 33.3%; }
+      .section-main .catalog-filter .catalog-filter-item.age0-1 {
+        display: inline-block;
+        margin-left: -10px; }
+      .section-main .catalog-filter .catalog-filter-item .wrap-bg .text:after {
+        background-size: auto 87%; }
+  .section-main .brands-carousel {
+    width: 100%; }
+  .section-main .news {
+    width: 25%; }
+    .section-main .news .news-item {
+      margin-bottom: 34px !important; }
+      .section-main .news .news-item:last-child {
+        display: block; } }
 @media screen and (max-width: 1500px) {
   header .bottom-header .menu {
     justify-content: space-between; } }
@@ -27,20 +46,20 @@
     padding: 40px 25px 35px; } }
 @media screen and (max-width: 960px) {
   header .bottom-header .menu a {
-    font-size: 1em; } }
+    font-size: 16px; } }
 @media screen and (max-width: 900px) {
   header .top-header {
     padding: 24px 8% 18px; }
     header .top-header .tel-wrapper .text {
-      font-size: 0.6875em; }
+      font-size: 11px; }
     header .top-header .tel-wrapper .tel {
-      font-size: 1.0625em; }
+      font-size: 17px; }
     header .top-header .logo-wrapper {
       width: 188px; }
   header .bottom-header {
     padding: 17px 0 20px 20px; }
     header .bottom-header .menu a {
-      font-size: 0.875em; }
+      font-size: 14px; }
 
   .section-slider .slide {
     height: 270px; }
@@ -50,9 +69,9 @@
       width: 60%;
       padding-top: 20px; }
       .section-slider .slide1 .text-container .text-wrapper .text-head {
-        font-size: 1.25em; }
+        font-size: 20px; }
       .section-slider .slide1 .text-container .text-wrapper .text-percent {
-        font-size: 4.125em;
+        font-size: 66px;
         margin-left: -25px; }
       .section-slider .slide1 .text-container .text-wrapper a {
         font-size: 16px;

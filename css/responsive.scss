@@ -6,6 +6,36 @@
       margin: 0 8px
     }
   }
+  .section-main{
+    .catalog-filter{
+      width: 75%;
+      .catalog-filter-item{
+        margin-bottom: 35px;
+        width: 33.3%;
+        &.age0-1{
+          display: inline-block;
+          margin-left: -10px;
+        }
+        .wrap-bg{
+          .text:after{
+            background-size: auto 87%;
+          }
+        }
+      }
+    }
+    .brands-carousel{
+      width: 100%;
+    }
+    .news{
+      width: 25%;
+      .news-item{
+        margin-bottom: 34px !important;
+        &:last-child{
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -72,7 +102,7 @@
     .bottom-header{
       .menu{
         a{
-          font-size: em(16);
+          font-size: 16px;
         }
       }
     }
@@ -85,10 +115,10 @@
       padding: 24px 8% 18px;
       .tel-wrapper{
         .text{
-          font-size: em(11);
+          font-size: 11px;
         }
         .tel{
-          font-size: em(17);
+          font-size: 17px;
         }
       }
       .logo-wrapper{
@@ -99,7 +129,7 @@
       padding: 17px 0 20px 20px;
       .menu{
         a{
-          font-size: em(14);
+          font-size: 14px;
         }
       }
     }
@@ -115,10 +145,10 @@
           width: 60%;
           padding-top: 20px;
           .text-head{
-            font-size: em(20);
+            font-size: 20px;
           }
           .text-percent{
-            font-size: em(66);
+            font-size: 66px;
             margin-left: -25px;
           }
           a{
