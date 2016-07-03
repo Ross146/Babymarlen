@@ -419,4 +419,64 @@ header .bottom-header {
         .section-main .section-main-bottom .delivery-payment-info .learn-more a:hover, .section-main .section-main-bottom .delivery-payment-info .learn-more a:active, .section-main .section-main-bottom .delivery-payment-info .learn-more a:focus {
           text-decoration: none; }
 
+.most-wish {
+  padding-top: 34px;
+  background: url(../images/black-wave.svg) repeat-x top center; }
+  .most-wish .head-text {
+    font-family: AvenirNextDemi;
+    font-size: 35px;
+    letter-spacing: 15px;
+    text-align: center;
+    color: #3b517a;
+    text-transform: uppercase; }
+  .most-wish .goods {
+    padding-top: 20px;
+    font-size: 0; }
+    .most-wish .goods .goods-item {
+      text-decoration: none;
+      color: #000;
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 0 10px;
+      text-align: center;
+      vertical-align: bottom;
+      background-color: #fff; }
+      .most-wish .goods .goods-item .text {
+        font-size: 15px;
+        text-transform: uppercase;
+        line-height: 20px; }
+      .most-wish .goods .goods-item .brand-info {
+        font-family: AvenirNextBold;
+        font-size: 18px; }
+      .most-wish .goods .goods-item .item-info {
+        color: gray;
+        font-family: AvenirNextRegular; }
+      .most-wish .goods .goods-item .price-info {
+        font-family: AvenirNextDemi;
+        font-size: 18px; }
+      .most-wish .goods .goods-item .img-wrapper {
+        width: 85%;
+        margin: 0 auto; }
+        .most-wish .goods .goods-item .img-wrapper img {
+          width: 100%; }
+    .most-wish .goods.owl-carousel .owl-controls {
+      position: absolute;
+      width: 100%; }
+      .most-wish .goods.owl-carousel .owl-controls .owl-dots {
+        text-align: center;
+        padding: 5px 0; }
+        .most-wish .goods.owl-carousel .owl-controls .owl-dots .owl-dot {
+          display: inline-block;
+          margin-right: 10px; }
+          .most-wish .goods.owl-carousel .owl-controls .owl-dots .owl-dot span {
+            width: 12px;
+            height: 12px;
+            border: 1px solid #9b9b9b;
+            display: inline-block;
+            border-radius: 12px; }
+          .most-wish .goods.owl-carousel .owl-controls .owl-dots .owl-dot.active span {
+            background-color: #9b9b9b; }
+          .most-wish .goods.owl-carousel .owl-controls .owl-dots .owl-dot:last-child {
+            margin-right: 0; }
+
 /*# sourceMappingURL=main.css.map */

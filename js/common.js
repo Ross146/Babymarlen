@@ -4,6 +4,12 @@ $(document).ready(function(){
         loop: true
     });
 
+    $('.most-wish .goods').owlCarousel({
+        items: 6,
+        loop: true,
+        autoplay: true
+    });
+
     function initBrandCarousel() {
         var $owlCarousel = $('.brands-carousel-container');
         var items = ($(window).width() < 900)? 5 : ($(window).width() < 1260)? 4: 6;

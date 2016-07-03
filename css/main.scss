@@ -529,3 +529,80 @@ header {
     }
   }
 }
+
+.most-wish{
+  padding-top: 34px;
+  background: url(../images/black-wave.svg) repeat-x top center;
+  .head-text{
+    font-family: AvenirNextDemi;
+    font-size: 35px;
+    letter-spacing: 15px;
+    text-align: center;
+    color: $denim;
+    text-transform: uppercase;
+  }
+  .goods{
+    padding-top: 20px;
+    font-size: 0;
+    .goods-item{
+      text-decoration: none;
+      color: #000;
+      display: inline-block;
+      box-sizing: border-box;
+      //width: 16.6%;
+      padding: 0 10px;
+      text-align: center;
+      vertical-align: bottom;
+      background-color: #fff;
+      .text{
+        font-size: 15px;
+        text-transform: uppercase;
+        line-height: 20px;
+      }
+      .brand-info{
+        font-family: AvenirNextBold;
+        font-size: 18px;
+      }
+      .item-info{
+        color: gray;
+        font-family: AvenirNextRegular;
+      }
+      .price-info{
+        font-family: AvenirNextDemi;
+        font-size: 18px;
+      }
+      .img-wrapper{
+        width: 85%;
+        margin: 0 auto;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    &.owl-carousel .owl-controls{
+      position: absolute;
+      width: 100%;
+      .owl-dots{
+        text-align: center;
+        padding: 5px 0;
+        .owl-dot{
+          display: inline-block;
+          margin-right: 10px;
+          span{
+            width: 12px;
+            height: 12px;
+            border: 1px solid #9b9b9b;
+            display: inline-block;
+            border-radius: 12px;
+          }
+          &.active span{
+            background-color: #9b9b9b;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
