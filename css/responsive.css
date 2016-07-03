@@ -1,29 +1,29 @@
-@media screen and (max-width: 1560px) {
+@media only screen and (max-width: 1560px) {
   header .bottom-header .menu a, header .bottom-header .menu .search-wrapper {
     margin: 0 8px; }
 
-  .section-main .catalog-filter {
+  .section-main .section-main-top .catalog-filter {
     width: 75%; }
-    .section-main .catalog-filter .catalog-filter-item {
+    .section-main .section-main-top .catalog-filter .catalog-filter-item {
       margin-bottom: 35px;
       width: 33.3%; }
-      .section-main .catalog-filter .catalog-filter-item.age0-1 {
+      .section-main .section-main-top .catalog-filter .catalog-filter-item.age0-1 {
         display: inline-block;
         margin-left: -10px; }
-      .section-main .catalog-filter .catalog-filter-item .wrap-bg .text:after {
+      .section-main .section-main-top .catalog-filter .catalog-filter-item .wrap-bg .text:after {
         background-size: auto 87%; }
-  .section-main .brands-carousel {
+  .section-main .section-main-top .brands-carousel {
     width: 100%; }
-  .section-main .news {
+  .section-main .section-main-top .news {
     width: 25%; }
-    .section-main .news .news-item {
+    .section-main .section-main-top .news .news-item {
       margin-bottom: 34px !important; }
-      .section-main .news .news-item:last-child {
+      .section-main .section-main-top .news .news-item:last-child {
         display: block; } }
-@media screen and (max-width: 1500px) {
+@media only screen and (max-width: 1500px) {
   header .bottom-header .menu {
     justify-content: space-between; } }
-@media screen and (max-width: 1280px) {
+@media only screen and (max-width: 1280px) {
   header .bottom-header {
     padding: 30px 8% 25px;
     margin-right: -65px; }
@@ -32,22 +32,22 @@
     left: 0; }
   .section-slider .slide1:after {
     right: 16%; } }
-@media screen and (max-width: 1150px) {
+@media only screen and (max-width: 1150px) {
   .section-slider .slide1 .text-container .text-wrapper .text-head {
     font-size: 1.875em; }
   .section-slider .slide1 .text-container .text-wrapper .text-percent {
     font-size: 5.625em;
     margin-left: -25px; } }
-@media screen and (max-width: 1010px) {
+@media only screen and (max-width: 1010px) {
   header .bottom-header {
     padding: 30px 25px 25px;
     margin-right: 0; }
   header .top-header {
     padding: 40px 25px 35px; } }
-@media screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
   header .bottom-header .menu a {
     font-size: 16px; } }
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   header .top-header {
     padding: 24px 8% 18px; }
     header .top-header .tel-wrapper .text {
@@ -78,6 +78,48 @@
         width: 134px;
         line-height: 34px; }
   .section-slider .slide1:after {
-    width: 180px; } }
+    width: 180px; }
+
+  .section-main .section-main-top .catalog-filter {
+    width: calc(100% + 4px); }
+    .section-main .section-main-top .catalog-filter .catalog-filter-item {
+      padding: 0 2px;
+      height: 192px;
+      margin-bottom: 4px; }
+      .section-main .section-main-top .catalog-filter .catalog-filter-item:first-child {
+        margin-left: -2px; }
+      .section-main .section-main-top .catalog-filter .catalog-filter-item.age0-1 {
+        margin-left: -2px; }
+      .section-main .section-main-top .catalog-filter .catalog-filter-item .wrap-bg .text {
+        line-height: 50px;
+        font-size: 20px; }
+  .section-main .section-main-top .news {
+    float: none;
+    width: 100%;
+    font-size: 0;
+    margin-top: 35px; }
+    .section-main .section-main-top .news .news-item {
+      display: inline-block !important;
+      width: 25%;
+      height: 144px; }
+      .section-main .section-main-top .news .news-item .img-wrapper {
+        float: none;
+        width: 33%;
+        display: inline-block;
+        height: auto; }
+        .section-main .section-main-top .news .news-item .img-wrapper img {
+          width: 100%;
+          height: auto; }
+      .section-main .section-main-top .news .news-item .text {
+        font-size: 14px;
+        position: static;
+        transform: none;
+        max-height: none;
+        overflow: visible;
+        padding: 0 5px; }
+        .section-main .section-main-top .news .news-item .text .head {
+          font-size: 13px; }
+  .section-main .section-main-top .brands-carousel {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=responsive.css.map */
