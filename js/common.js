@@ -7,7 +7,8 @@ $(document).ready(function(){
     $('.most-wish .goods').owlCarousel({
         items: 6,
         loop: true,
-        autoplay: true
+        autoplay: true,
+        margin: 20
     });
 
     function initBrandCarousel() {

@@ -295,9 +295,13 @@ header .bottom-header {
           background: url(../images/slide-arrow-next.svg) no-repeat center; }
 .section-main .section-main-bottom {
   padding-top: 80px;
-  padding-bottom: 35px; }
+  padding-bottom: 35px;
+  background-color: #fffbf9;
+  position: relative;
+  z-index: 0; }
   .section-main .section-main-bottom .novelty {
-    font-size: 0; }
+    font-size: 0;
+    position: relative; }
     .section-main .section-main-bottom .novelty:after {
       content: "";
       display: table;
@@ -357,6 +361,15 @@ header .bottom-header {
           margin: 0 auto; }
           .section-main .section-main-bottom .novelty .goods .goods-item .img-wrapper img {
             width: 100%; }
+    .section-main .section-main-bottom .novelty:before {
+      content: '';
+      position: absolute;
+      top: 25px;
+      left: 0;
+      width: 100%;
+      height: 70%;
+      background-color: #f0f0f0;
+      z-index: -1; }
   .section-main .section-main-bottom .delivery-payment-info {
     font-size: 0;
     padding-top: 120px; }
@@ -420,7 +433,8 @@ header .bottom-header {
           text-decoration: none; }
 
 .most-wish {
-  padding-top: 34px;
+  padding: 34px 0;
+  position: relative;
   background: url(../images/black-wave.svg) repeat-x top center; }
   .most-wish .head-text {
     font-family: AvenirNextDemi;
@@ -435,7 +449,6 @@ header .bottom-header {
     .most-wish .goods .goods-item {
       text-decoration: none;
       color: #000;
-      display: inline-block;
       box-sizing: border-box;
       padding: 0 10px;
       text-align: center;
@@ -459,6 +472,8 @@ header .bottom-header {
         margin: 0 auto; }
         .most-wish .goods .goods-item .img-wrapper img {
           width: 100%; }
+    .most-wish .goods.owl-carousel .owl-item {
+      background-color: #fff; }
     .most-wish .goods.owl-carousel .owl-controls {
       position: absolute;
       width: 100%; }
@@ -478,5 +493,78 @@ header .bottom-header {
             background-color: #9b9b9b; }
           .most-wish .goods.owl-carousel .owl-controls .owl-dots .owl-dot:last-child {
             margin-right: 0; }
+    .most-wish .goods .owl-controls {
+      position: absolute;
+      width: 100%; }
+      .most-wish .goods .owl-controls .owl-dots {
+        text-align: center;
+        padding: 5px 0; }
+        .most-wish .goods .owl-controls .owl-dots .owl-dot {
+          display: inline-block;
+          margin-right: 10px; }
+          .most-wish .goods .owl-controls .owl-dots .owl-dot span {
+            width: 12px;
+            height: 12px;
+            border: 1px solid #9b9b9b;
+            display: inline-block;
+            border-radius: 12px; }
+          .most-wish .goods .owl-controls .owl-dots .owl-dot.active span {
+            background-color: #9b9b9b; }
+          .most-wish .goods .owl-controls .owl-dots .owl-dot:last-child {
+            margin-right: 0; }
+  .most-wish:before, .most-wish:after {
+    content: '';
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    z-index: -1; }
+  .most-wish:after {
+    z-index: -2;
+    height: 100%;
+    background-color: #fffbf9; }
+
+.news-subscribe {
+  padding: 80px 0;
+  background-color: #fffbf9; }
+  .news-subscribe .news-subscribe-container {
+    background-color: #fff;
+    height: 305px;
+    font-size: 0; }
+    .news-subscribe .news-subscribe-container .news,
+    .news-subscribe .news-subscribe-container .subscribe {
+      display: inline-block;
+      height: 100%;
+      vertical-align: top; }
+    .news-subscribe .news-subscribe-container .news {
+      width: calc(100% / 3 * 2);
+      background: url("../images/black-wave.svg") repeat-x center bottom; }
+      .news-subscribe .news-subscribe-container .news > div {
+        width: 50%;
+        display: inline-block;
+        height: 100%; }
+      .news-subscribe .news-subscribe-container .news .img-wrapper {
+        height: 100%;
+        display: inline-block;
+        width: 141px;
+        vertical-align: top;
+        background: url(../images/section-main-kids-1.png) no-repeat bottom;
+        background-size: contain; }
+      .news-subscribe .news-subscribe-container .news .text {
+        vertical-align: top;
+        height: 100%;
+        display: inline-block;
+        width: calc( 100% - 141px); }
+    .news-subscribe .news-subscribe-container .subscribe {
+      width: calc(100% / 3);
+      height: 100%;
+      background: url("../images/black-wave.svg") repeat-x center bottom; }
+    .news-subscribe .news-subscribe-container .head-text {
+      font-family: AvenirNextRegular;
+      font-size: 24px;
+      text-align: center;
+      text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
