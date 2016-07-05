@@ -14,5 +14,17 @@
   font-family: "AvenirNextRegular";
   src: url("AvenirNext/AvenirNext-Regular/AvenirNext-Regular.eot");
   src: url("AvenirNext/AvenirNext-Regular/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("AvenirNext/AvenirNext-Regular/AvenirNext-Regular.woff") format("woff"), url("AvenirNext/AvenirNext-Regular/AvenirNext-Regular.ttf") format("truetype"), url("AvenirNext/AvenirNext-Regular/AvenirNext-Regular.svg#AvenirNextRegular") format("svg"); }
+@font-face {
+  font-family: "a_AvanteLtDemiBold";
+  src: url("a_AvanteLt/a_AvanteLtDemiBold/a_AvanteLtDemiBold.eot");
+  src: url("a_AvanteLt/a_AvanteLtDemiBold/a_AvanteLtDemiBold.eot?#iefix") format("embedded-opentype"), url("a_AvanteLt/a_AvanteLtDemiBold/a_AvanteLtDemiBold.woff") format("woff"), url("a_AvanteLt/a_AvanteLtDemiBold/a_AvanteLtDemiBold.ttf") format("truetype"), url("a_AvanteLt/a_AvanteLtDemiBold/a_AvanteLtDemiBold.svg#a_AvanteLtDemiBold") format("svg"); }
+@font-face {
+  font-family: "a_AvanteBsExtraBold";
+  src: url("a_AvanteBs/a_AvanteBsExtraBold/a_AvanteBsExtraBold.eot");
+  src: url("a_AvanteBs/a_AvanteBsExtraBold/a_AvanteBsExtraBold.eot?#iefix") format("embedded-opentype"), url("a_AvanteBs/a_AvanteBsExtraBold/a_AvanteBsExtraBold.woff") format("woff"), url("a_AvanteBs/a_AvanteBsExtraBold/a_AvanteBsExtraBold.ttf") format("truetype"), url("a_AvanteBs/a_AvanteBsExtraBold/a_AvanteBsExtraBold.svg#a_AvanteBsExtraBold") format("svg"); }
+@font-face {
+  font-family: "a_AvanteTitlerCpsUpCLight";
+  src: url("a_AvanteTitlerCpsUpC/a_AvanteTitlerCpsUpCLight/a_AvanteTitlerCpsUpCLight.eot");
+  src: url("a_AvanteTitlerCpsUpC/a_AvanteTitlerCpsUpCLight/a_AvanteTitlerCpsUpCLight.eot?#iefix") format("embedded-opentype"), url("a_AvanteTitlerCpsUpC/a_AvanteTitlerCpsUpCLight/a_AvanteTitlerCpsUpCLight.woff") format("woff"), url("a_AvanteTitlerCpsUpC/a_AvanteTitlerCpsUpCLight/a_AvanteTitlerCpsUpCLight.ttf") format("truetype"), url("a_AvanteTitlerCpsUpC/a_AvanteTitlerCpsUpCLight/a_AvanteTitlerCpsUpCLight.svg#a_AvanteTitlerCpsUpCLight") format("svg"); }
 
 /*# sourceMappingURL=fonts.css.map */

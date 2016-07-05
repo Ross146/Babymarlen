@@ -11,6 +11,15 @@ $(document).ready(function(){
         margin: 20
     });
 
+    $('.gallery-slider .slider').owlCarousel({
+        items: 5,
+        loop: true,
+        autoplay: true,
+        margin: 50,
+        nav: true,
+        navText: ''
+    });
+
     function initBrandCarousel() {
         var $owlCarousel = $('.brands-carousel-container');
         var items = ($(window).width() < 900)? 5 : ($(window).width() < 1260)? 4: 6;
