@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="848px" height="12px" viewBox="0 0 848 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>97FE0A4F-376B-44BE-B0AE-66136DEDD392</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <pattern id="pattern-1" width="14.3999997" height="14.3999997" x="-14.3999997" y="310.6" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-2" transform="scale(0.239999995,0.239999995)"></use>
+        </pattern>
+        <image id="image-2" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAA1teXP8meAAABIZJREFUaAXtl9tx2zAQReM0EHUQ/vg77MDsIOrA7CAqQelA6YDpgOmA7oD+tX+YDpgKnHM1WA1FURIE8aUZ7cwdkHgs9nABCHr4+Pj4NFd7f39fEFuCYldGlF9Rl/2jskSF9Pj4qPLAHuYGDKTgUpSgbyjU9AEytAG+otzaLIAbkEuiOpZBF3JQ8YtRa8DryYCBjAgidRoCEtd7poynD29vb7keRL/XPMCL25PK4gpds1yDoxOwTi3Rr4DOKHu1BqRAv/fqPMCZAdvQvzxorWdWEVK65ZowdhaQTYY2sLUp4zkqJD5ARXnUAIxpNCU8D7FclYwKlahGbbP5T54Hx4DbzvT+0lEZUXdygo4xvlWvdCxMvmfMuS10CbBvoNf0+8PgXJDnVpXPJG5rren7bP3nAKxMblDum0UL3rd04Bn9nwSs/fDFd3BP/bQfM6mPTPrGBPhKwJEmRk9oSLODUFe9csiJTvne3bSgX9JRS6vPQ8ggtVzzU4GM1bYDtgkBT3hOkT5AyFLXnhScDp6CsjcjtgXO4iMOa5+VcwDcdObgEzeJJuuyksoKlX0COrgEv5Igfbecfj4LpFWl2PbsJPBezxFegIyYZunkC3gqsu0vAOCZdZocuAGZEtQQNzSxCnylFahTesFDrdqxzC1XZTJFfWTSN/RfAq7onYred1RoP0BtuT6H+rh2nIA/nJPflGvAq2udNsc3IAUbcuo33V393AQ2ZwLfAF5axSWlW64JYyybk0M24+8CtnZd/wqnqmvJO7iYPlKEEjTEwaNDp0JKglSjtikG09EYTgG3HY75ro+do0LiY3cB0tRtJCKiZYlW6Cva2ZyADTIL3U47qsYD8Cmva7QFnxp4EEjgDgzwNZXbf0slD0fX/MHI6yv+4SKXyKTK0QzoeHvTMnpmHvJE/YN/A61Ho2xNtLtaAr2gbYOWqC/wWUA2mXfAVunABS19t3rP8oV+JdLJmnuO8eqm5UjHCKnssprKknmLrkarOwC2BiuZKOFZkyysrlWWvOt3WmVvxrxLnCUoRk/oEtOHz5DOibo58Cxws/OQz1eurGOh2QG5BrxSp8mBAU2JQ9m8dPswxNsEruvyWr/Dcd/L8VwYbpuk9BNoXwfkuWnV/moXj5+i9xkR2gdI7cUUCXLvusf7aGbAmvAv0lrPKHsxB5ngLEXf0OTWBLZgBL5BOuEqq/QpAVzQL3GaNJPH4u0CbvZ95aVEFSpQ2wQYo8iVQ2TRYlAc21i6EuHOBYtjSd/ObXMOmHGjm/2U5MysC0wdEoHbTivGPjfHzwV4BwmgQHszwCOcrdEWfGrg3wSis6JXSHwemFvymYA3tP446DFcxQuuMyTQerhpDj0DvdjetBy9wIc4dDSzDp4MXXzyM6ZX27taAp7iXXpC15oyqaU6OWQTZA/YGgCPeE5RgnzhBViiQhp7uTKnl3UCt0fyAWLqFu16917OFa4rXi/groG3Wvf5VgMPjfsOHPrlbmXcPcO3kqnQOO8ZDv1ytzLunuFbyVRonPcMh365Wxl3z/CtZCo0zv9BZ+40Wcc3HgAAAABJRU5ErkJggg=="></image>
+    </defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-1260" transform="translate(0.000000, -2909.000000)" fill="url(#pattern-1)">
+            <g id="Blog+" transform="translate(0.000000, 2584.000000)">
+                <polygon id="Pattern" transform="translate(424.000000, 331.000000) scale(1, -1) translate(-424.000000, -331.000000) " points="0 325 848 325 848 337 283.133309 337 0 337"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
