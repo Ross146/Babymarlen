@@ -110,6 +110,7 @@ header .bottom-header {
     background-size: contain; }
   .section-slider .slide1 .text-container {
     position: absolute;
+    text-align: center;
     height: 83%;
     background-color: #f2f6f7;
     margin-top: 66px;
@@ -126,9 +127,11 @@ header .bottom-header {
       background: url(../images/waves.svg) center top;
       background-size: cover; }
     .section-slider .slide1 .text-container .text-wrapper {
-      width: 68%;
-      margin: 0 auto;
-      padding-top: 29px; }
+      text-align: left;
+      display: inline-block;
+      padding-top: 17px; }
+      .section-slider .slide1 .text-container .text-wrapper > * {
+        display: block; }
       .section-slider .slide1 .text-container .text-wrapper .text-head {
         font-family: AvenirNextDemi;
         text-transform: uppercase;
@@ -207,11 +210,12 @@ header .bottom-header {
         overflow: hidden; }
         .section-main .section-main-top .news .news-item .text div {
           font-size: 15px;
-          font-family: AvenirNextRegular;
-          text-transform: uppercase; }
+          font-family: AvenirNextRegular; }
         .section-main .section-main-top .news .news-item .text .head {
           font-size: 16px;
-          font-family: AvenirNextDemi; }
+          line-height: 18px;
+          font-family: AvenirNextDemi;
+          text-transform: uppercase; }
   .section-main .section-main-top .catalog-filter {
     width: 83.3%;
     font-size: 0;
@@ -308,15 +312,18 @@ header .bottom-header {
       clear: both; }
     .section-main .section-main-bottom .novelty .novelty-menu {
       float: left;
-      width: 228px;
+      width: 15%;
+      max-width: 228px;
       vertical-align: top;
       background: url(../images/novelty-wave.svg) no-repeat top left;
       background-size: 100% auto;
       padding-top: 65px; }
+      .section-main .section-main-bottom .novelty .novelty-menu .novelty-menu-container {
+        display: inline-block;
+        float: right; }
       .section-main .section-main-bottom .novelty .novelty-menu .head-text, .section-main .section-main-bottom .novelty .novelty-menu a {
         display: block;
-        text-transform: uppercase;
-        margin-left: 69px; }
+        text-transform: uppercase; }
       .section-main .section-main-bottom .novelty .novelty-menu .head-text {
         color: #ed6990;
         font-size: 30px;
@@ -339,10 +346,13 @@ header .bottom-header {
         color: #000;
         display: inline-block;
         box-sizing: border-box;
-        width: 20%;
-        padding: 0 10px;
+        width: calc(20% - 20px);
+        margin: 0 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e5e5e5;
         text-align: center;
-        vertical-align: bottom; }
+        vertical-align: bottom;
+        background-color: #fff; }
         .section-main .section-main-bottom .novelty .goods .goods-item .text {
           font-size: 15px;
           text-transform: uppercase;
@@ -358,7 +368,8 @@ header .bottom-header {
           font-size: 18px; }
         .section-main .section-main-bottom .novelty .goods .goods-item .img-wrapper {
           width: 85%;
-          margin: 0 auto; }
+          margin: 0 auto;
+          background-color: #fff; }
           .section-main .section-main-bottom .novelty .goods .goods-item .img-wrapper img {
             width: 100%; }
     .section-main .section-main-bottom .novelty:before {
