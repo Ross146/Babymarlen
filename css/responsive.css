@@ -1,71 +1,51 @@
-@media only screen and (max-width: 1800px) {
-  .section-main .section-main-bottom .novelty .goods .goods-item .img-wrapper {
-    width: 100%; } }
 @media only screen and (max-width: 1560px) {
-  header .bottom-header .menu a, header .bottom-header .menu .search-wrapper {
-    margin: 0 8px; }
-
-  .section-main .section-main-top .catalog-filter {
-    width: 75%; }
-    .section-main .section-main-top .catalog-filter .catalog-filter-item {
-      margin-bottom: 35px;
-      width: 33.3%; }
-      .section-main .section-main-top .catalog-filter .catalog-filter-item.age0-1 {
-        display: inline-block;
-        margin-left: -10px; }
-      .section-main .section-main-top .catalog-filter .catalog-filter-item .wrap-bg .text:after {
-        background-size: auto 87%; }
-  .section-main .section-main-top .brands-carousel {
-    width: 100%;
-    margin-top: 75px; }
-  .section-main .section-main-top .news {
-    width: 25%; }
-    .section-main .section-main-top .news .news-item {
-      margin-bottom: 34px !important; }
-      .section-main .section-main-top .news .news-item:last-child {
-        display: block; }
-  .section-main .section-main-bottom .novelty .goods {
-    margin-right: -10px; }
-    .section-main .section-main-bottom .novelty .goods .goods-item .img-wrapper {
-      padding: 20px 0; }
   .section-main .delivery-payment-info .info-item-container {
     margin-left: 3.3%; }
   .section-main .delivery-payment-info .learn-more {
     width: 13.3%;
     padding-left: 0; } }
-@media only screen and (max-width: 1500px) {
-  header .bottom-header .menu {
-    justify-content: space-between; } }
 @media only screen and (max-width: 1280px) {
-  header .bottom-header {
-    padding: 30px 8% 25px;
-    margin-right: -65px; }
-
   .section-slider .slide1 .text-container {
     left: 0; }
   .section-slider .slide1:after {
     right: 16%; }
 
-  .section-main .section-main-top .catalog-filter .catalog-filter-item {
-    padding: 0 6px; }
-    .section-main .section-main-top .catalog-filter .catalog-filter-item:first-child {
-      margin-left: -6px; }
-    .section-main .section-main-top .catalog-filter .catalog-filter-item.age0-1 {
-      margin-left: -6px; }
-  .section-main .section-main-bottom .novelty .novelty-menu {
-    width: 17%;
-    text-align: center; }
-    .section-main .section-main-bottom .novelty .novelty-menu .novelty-menu-container {
-      float: none;
-      text-align: left; }
-  .section-main .section-main-bottom .novelty .goods .goods-item {
-    margin: 0 6px;
-    width: calc(20% - 12px); }
-    .section-main .section-main-bottom .novelty .goods .goods-item .brand-info,
-    .section-main .section-main-bottom .novelty .goods .goods-item .price-info {
-      font-size: 16px; }
-    .section-main .section-main-bottom .novelty .goods .goods-item .item-info {
-      font-size: 14px; } }
+  .section-main .section-category {
+    width: calc(100% + 1.6%); }
+    .section-main .section-category .section-category-item {
+      height: 238px; }
+  .section-main .section-delivery-payment-info {
+    height: auto;
+    display: block;
+    width: 100%; }
+    .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container {
+      vertical-align: middle;
+      padding-top: 0;
+      padding-left: 5%;
+      box-sizing: border-box;
+      width: 91%;
+      display: inline-block; }
+      .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container .info-item {
+        margin-bottom: 0;
+        display: inline-block;
+        width: 25%; }
+        .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container .info-item .text {
+          font-size: 14px;
+          line-height: 16px;
+          text-transform: uppercase; }
+        .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container .info-item:last-child {
+          margin-bottom: 0; }
+    .section-main .section-delivery-payment-info .learn-more {
+      vertical-align: middle;
+      background: none;
+      background-color: #fafafa;
+      height: 66px;
+      display: inline-block;
+      width: 9%; }
+      .section-main .section-delivery-payment-info .learn-more a {
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 15px; } }
 @media only screen and (max-width: 1150px) {
   .section-slider .slide1 .text-container .text-wrapper .text-head {
     font-size: 1.875em; }
@@ -73,42 +53,11 @@
     font-size: 5.625em;
     margin-left: -25px; }
 
-  .section-main .section-main-bottom .novelty .novelty-menu {
-    width: 25%;
-    max-width: none; }
-  .section-main .section-main-bottom .novelty .goods {
-    width: 75%; }
-    .section-main .section-main-bottom .novelty .goods .goods-item {
-      width: calc(33.3% - 12px); }
-      .section-main .section-main-bottom .novelty .goods .goods-item .img-wrapper {
-        padding: 0; }
-      .section-main .section-main-bottom .novelty .goods .goods-item:nth-child(4), .section-main .section-main-bottom .novelty .goods .goods-item:nth-child(5) {
-        display: none; }
-  .section-main .section-main-bottom .novelty:before {
-    height: 80%; } }
-@media only screen and (max-width: 1010px) {
-  header .bottom-header {
-    padding: 30px 25px 25px;
-    margin-right: 0; }
-  header .top-header {
-    padding: 40px 25px 35px; } }
-@media only screen and (max-width: 960px) {
-  header .bottom-header .menu a {
-    font-size: 16px; } }
+  .section-main .section-category .section-category-item {
+    height: 204px; }
+  .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container {
+    padding-left: 0; } }
 @media only screen and (max-width: 900px) {
-  header .top-header {
-    padding: 24px 8% 18px; }
-    header .top-header .tel-wrapper .text {
-      font-size: 11px; }
-    header .top-header .tel-wrapper .tel {
-      font-size: 17px; }
-    header .top-header .logo-wrapper {
-      width: 188px; }
-  header .bottom-header {
-    padding: 17px 0 20px 20px; }
-    header .bottom-header .menu a {
-      font-size: 14px; }
-
   .section-slider .slide {
     height: 270px; }
   .section-slider .slide1 .text-container {
@@ -126,47 +75,98 @@
         width: 134px;
         line-height: 34px; }
   .section-slider .slide1:after {
-    width: 180px; }
+    width: 170px; }
 
-  .section-main .section-main-top .catalog-filter {
-    width: calc(100% + 4px); }
-    .section-main .section-main-top .catalog-filter .catalog-filter-item {
+  .section-main .section-category {
+    width: calc(100% + .8%); }
+    .section-main .section-category .section-category-item {
       height: 192px;
-      margin-bottom: 4px; }
-      .section-main .section-main-top .catalog-filter .catalog-filter-item:first-child {
-        margin-left: -2px; }
-      .section-main .section-main-top .catalog-filter .catalog-filter-item.age0-1 {
-        margin-left: -2px; }
-      .section-main .section-main-top .catalog-filter .catalog-filter-item .wrap-bg .text {
-        line-height: 50px;
-        font-size: 20px; }
-  .section-main .section-main-top .news {
-    float: none;
+      margin-bottom: 12px;
+      padding: 0 .4%; }
+      .section-main .section-category .section-category-item .wrap-bg .text {
+        font-size: 20px;
+        letter-spacing: 2px; }
+      .section-main .section-category .section-category-item:first-child, .section-main .section-category .section-category-item:nth-child(4) {
+        margin-left: -0.4%; }
+  .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container {
+    padding-left: 5%;
+    width: 87%; }
+    .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container .info-item {
+      width: 50%; }
+  .section-main .section-delivery-payment-info .learn-more {
+    height: 118px;
+    width: 13%; }
+    .section-main .section-delivery-payment-info .learn-more a {
+      padding-top: 40px; } }
+@media only screen and (max-width: 500px) {
+  .section-slider .slide {
+    height: 264px; }
+  .section-slider .slide1 .text-container {
+    height: 125px;
+    width: 164px; }
+    .section-slider .slide1 .text-container .text-wrapper {
+      padding-top: 14px;
+      margin-left: -30px; }
+      .section-slider .slide1 .text-container .text-wrapper .text-head {
+        font-size: 11px; }
+      .section-slider .slide1 .text-container .text-wrapper .text-percent {
+        font-size: 38px;
+        margin-left: -15px; }
+      .section-slider .slide1 .text-container .text-wrapper a {
+        font-size: 11px;
+        line-height: 22px;
+        width: 106px;
+        height: 22px;
+        margin-top: 3px; }
+    .section-slider .slide1 .text-container:after {
+      height: 15%; }
+  .section-slider .slide1:after {
+    right: 0; }
+  .section-slider.owl-carousel .owl-controls .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px; }
+
+  .section-main .section-category {
+    display: block;
+    width: 100%; }
+    .section-main .section-category .section-category-item {
+      display: block;
+      width: 100%;
+      padding: 0;
+      height: 140px; }
+      .section-main .section-category .section-category-item:nth-child(4), .section-main .section-category .section-category-item:nth-child(5), .section-main .section-category .section-category-item:nth-child(6) {
+        display: none; }
+      .section-main .section-category .section-category-item .wrap-bg {
+        background-size: cover;
+        background-position: center top; }
+      .section-main .section-category .section-category-item:first-child {
+        margin-left: 0; }
+    .section-main .section-category .mobile-category-items {
+      display: block; }
+  .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container {
+    display: block;
     width: 100%;
-    font-size: 0;
-    margin-top: 35px; }
-    .section-main .section-main-top .news .news-item {
-      display: inline-block !important;
-      width: 25%;
-      height: 144px; }
-      .section-main .section-main-top .news .news-item .img-wrapper {
-        float: none;
-        width: 33%;
-        display: inline-block;
-        height: auto; }
-        .section-main .section-main-top .news .news-item .img-wrapper img {
-          width: 100%;
-          height: auto; }
-      .section-main .section-main-top .news .news-item .text {
-        font-size: 14px;
-        position: static;
-        transform: none;
-        max-height: none;
-        overflow: visible;
-        padding: 0 5px; }
-        .section-main .section-main-top .news .news-item .text .head {
-          font-size: 13px; }
-  .section-main .section-main-top .brands-carousel {
-    margin-top: 0; } }
+    padding-left: 0;
+    margin-top: 25px; }
+    .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container .info-item {
+      width: 100%;
+      display: block;
+      margin-bottom: 25px; }
+      .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container .info-item .text {
+        text-transform: none;
+        font-size: 20px;
+        width: 65%; }
+      .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container .info-item .img-wrap {
+        width: 35%; }
+      .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container .info-item:last-child {
+        margin-bottom: 25px; }
+  .section-main .section-delivery-payment-info .delivery-payment-info-container .learn-more {
+    display: inline-block;
+    width: 100%;
+    height: auto; }
+    .section-main .section-delivery-payment-info .delivery-payment-info-container .learn-more a {
+      font-size: 16px;
+      line-height: 47px;
+      padding-top: 0; } }
 
 /*# sourceMappingURL=responsive.css.map */

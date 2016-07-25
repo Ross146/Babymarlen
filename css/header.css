@@ -1,0 +1,116 @@
+header .top-header {
+  padding: 40px 8.3% 35px; }
+  header .top-header .tel-wrapper {
+    float: left;
+    display: inline-block; }
+    header .top-header .tel-wrapper .text {
+      font-family: AvenirNextRegular;
+      font-size: 18px;
+      text-transform: uppercase; }
+    header .top-header .tel-wrapper .tel {
+      font-family: AvenirNextDemi;
+      font-size: 29px; }
+  header .top-header .logo-wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 307px; }
+    header .top-header .logo-wrapper img {
+      width: 100%; }
+  header .top-header .icon-wrapper {
+    padding-top: 5px;
+    display: inline-block;
+    float: right; }
+    header .top-header .icon-wrapper .icon {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      margin-right: 12px;
+      vertical-align: top; }
+      header .top-header .icon-wrapper .icon.profile {
+        background: url(../images/profile.svg) no-repeat center bottom; }
+      header .top-header .icon-wrapper .icon.heart {
+        background: url(../images/bag.svg) no-repeat center bottom;
+        margin-right: 0; }
+      header .top-header .icon-wrapper .icon.bag {
+        background: url(../images/heart.svg) no-repeat center bottom; }
+      header .top-header .icon-wrapper .icon .number {
+        border-radius: 10em;
+        display: inline-block;
+        float: right;
+        font-size: 11px;
+        padding: 0 3px;
+        font-family: AvenirNextMedium; }
+      header .top-header .icon-wrapper .icon.heart .number {
+        background-color: #7a92c6; }
+      header .top-header .icon-wrapper .icon.bag .number {
+        background-color: #ed6990; }
+header .bottom-header {
+  padding: 30px 12% 25px;
+  text-align: center;
+  background: url(../images/header-bg.svg) repeat-x center top; }
+  header .bottom-header .menu {
+    display: flex;
+    justify-content: space-around; }
+    header .bottom-header .menu a, header .bottom-header .menu .search-wrapper {
+      margin: 0 25px;
+      vertical-align: top;
+      display: inline-block; }
+    header .bottom-header .menu a {
+      color: #000;
+      font-family: AvenirNextRegular;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.04375em;
+      text-decoration: none;
+      white-space: nowrap; }
+      header .bottom-header .menu a.blog {
+        color: #7a92c6; }
+      header .bottom-header .menu a.sale {
+        color: #ed6990; }
+      header .bottom-header .menu a:hover, header .bottom-header .menu a:active, header .bottom-header .menu a:focus {
+        text-decoration: none; }
+      header .bottom-header .menu a:first-child {
+        margin-left: 0; }
+    header .bottom-header .menu .search-wrapper {
+      margin-right: 0; }
+      header .bottom-header .menu .search-wrapper .search-icon {
+        height: 22px;
+        width: 22px;
+        background: url(../images/search.svg) no-repeat center;
+        cursor: pointer; }
+
+@media only screen and (max-width: 1560px) {
+  header .bottom-header .menu a, header .bottom-header .menu .search-wrapper {
+    margin: 0 8px; } }
+@media only screen and (max-width: 1500px) {
+  header .bottom-header .menu {
+    justify-content: space-between; } }
+@media only screen and (max-width: 1280px) {
+  header .bottom-header {
+    padding: 30px 8% 25px;
+    margin-right: -65px; } }
+@media only screen and (max-width: 1010px) {
+  header .bottom-header {
+    padding: 30px 25px 25px;
+    margin-right: 0; }
+  header .top-header {
+    padding: 40px 25px 35px; } }
+@media only screen and (max-width: 960px) {
+  header .bottom-header .menu a {
+    font-size: 16px; } }
+@media only screen and (max-width: 900px) {
+  header .top-header {
+    padding: 24px 8% 18px; }
+    header .top-header .tel-wrapper .text {
+      font-size: 11px; }
+    header .top-header .tel-wrapper .tel {
+      font-size: 17px; }
+    header .top-header .logo-wrapper {
+      width: 188px; }
+  header .bottom-header {
+    padding: 17px 0 20px 20px; }
+    header .bottom-header .menu a {
+      font-size: 14px; } }
+
+/*# sourceMappingURL=header.css.map */

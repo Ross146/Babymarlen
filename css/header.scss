@@ -1,0 +1,187 @@
+@import '_variables';
+
+header {
+  .top-header {
+    padding: 40px 8.3% 35px;
+    .tel-wrapper {
+      float: left;
+      display: inline-block;
+      .text {
+        font-family: AvenirNextRegular;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+      .tel {
+        font-family: AvenirNextDemi;
+        font-size: 29px;
+      }
+    }
+    .logo-wrapper {
+      display: block;
+      margin: 0 auto;
+      width: 307px;
+      img {
+        width: 100%;
+      }
+    }
+    .icon-wrapper {
+      padding-top: 5px;
+      display: inline-block;
+      float: right;
+      .icon {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        margin-right: 12px;
+        vertical-align: top;
+        &.profile {
+          background: url(../images/profile.svg) no-repeat center bottom;
+        }
+        &.heart {
+          background: url(../images/bag.svg) no-repeat center bottom;
+          margin-right: 0;
+        }
+        &.bag {
+          background: url(../images/heart.svg) no-repeat center bottom;
+        }
+        .number {
+          border-radius: 10em;
+          display: inline-block;
+          float: right;
+          font-size: 11px;
+          padding: 0 3px;
+          font-family: AvenirNextMedium;
+        }
+        &.heart .number {
+          background-color: $faded-blue;
+        }
+        &.bag .number {
+          background-color: $medium-pink;
+        }
+      }
+    }
+  }
+  .bottom-header {
+    padding: 30px 12% 25px;
+    text-align: center;
+    background: url(../images/header-bg.svg) repeat-x center top;
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      a, .search-wrapper{
+        margin: 0 25px;
+        vertical-align: top;
+        display: inline-block;
+      }
+      a {
+        color: #000;
+        font-family: AvenirNextRegular;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: em(0.7);
+        text-decoration: none;
+        white-space: nowrap;
+        &.blog {
+          color: $faded-blue;
+        }
+        &.sale {
+          color: $medium-pink;
+        }
+        &:hover, &:active, &:focus {
+          text-decoration: none;
+        }
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+      .search-wrapper {
+        margin-right: 0;
+        .search-icon {
+          height: 22px;
+          width: 22px;
+          background: url(../images/search.svg) no-repeat center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1560px) {
+  header .bottom-header .menu {
+    a, .search-wrapper {
+      margin: 0 8px
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  header {
+    .bottom-header {
+      .menu {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  header {
+    .bottom-header {
+      padding: 30px 8% 25px;
+      margin-right: -65px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  header {
+    .bottom-header {
+      padding: 30px 25px 25px;
+      margin-right: 0;
+    }
+    .top-header{
+      padding: 40px 25px 35px;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  header{
+    .bottom-header{
+      .menu{
+        a{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    .top-header {
+      padding: 24px 8% 18px;
+      .tel-wrapper {
+        .text {
+          font-size: 11px;
+        }
+        .tel {
+          font-size: 17px;
+        }
+      }
+      .logo-wrapper {
+        width: 188px;
+      }
+    }
+    .bottom-header {
+      padding: 17px 0 20px 20px;
+      .menu {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
