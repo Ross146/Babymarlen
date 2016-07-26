@@ -1,55 +1,36 @@
-$(document).ready(function(){
-    $('.section-slider').owlCarousel({
-        items: 1,
-        loop: true
-    });
+(function(){
+    function gallerySlide($gallerySlide) {
 
-    $('.most-wish .goods').owlCarousel({
-        items: 6,
-        loop: true,
-        autoplay: true,
-        margin: 20
-    });
 
-    $('.gallery-slider .slider').owlCarousel({
-        items: 5,
-        loop: true,
-        autoplay: true,
-        margin: 50,
-        nav: true,
-        navText: ''
-    });
 
-    function initBrandCarousel() {
-        var $owlCarousel = $('.brands-carousel-container');
-        var items = ($(window).width() < 900)? 5 : ($(window).width() < 1260)? 4: 6;
-        function initCarousel() {
-            $owlCarousel.owlCarousel({
-                items: items,
-                dots:false,
-                loop: true,
-                nav: true,
-                autoplay: true
-            });
+        if ($(window).width() > 500 && !!$gallerySlide.find(('.owl-stage-outer').length)){
+            $gallerySlide.trigger('destroy.owl.carousel');
+            $gallerySlide.html($gallerySlide.find('.owl-stage-outer').html()).removeClass('owl-loaded');
+            $gallerySlide.removeClass('owl-carousel');
+            return;
         }
+        $gallerySlide.owlCarousel({
+            items: 2,
+            loop: true,
+            responsive: false,
+            center: true
+        });
 
-        function destroyCarousel() {
-            $owlCarousel.trigger('destroy.owl.carousel');
-            $owlCarousel.html($owlCarousel.find('.owl-stage-outer').html()).removeClass('owl-loaded');
-        }
-
-        function refreshCarousel() {
-            destroyCarousel();
-            initCarousel();
-        }
-
-        refreshCarousel();
     }
 
-    $(window).resize(function() {
-        initBrandCarousel();
+    $(document).ready(function(){
+        $('.section-slider').owlCarousel({
+            items: 1,
+            loop: true
+        });
+
+        gallerySlide($('.instagram-gallery .photo-container'));
+
+        $(window).resize(function () {
+            gallerySlide($('.instagram-gallery .photo-container'));
+        })
     });
 
-    initBrandCarousel();
 
-});
+})();
+

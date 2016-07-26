@@ -46,6 +46,7 @@ header .top-header {
       header .top-header .icon-wrapper .icon.bag .number {
         background-color: #ed6990; }
 header .bottom-header {
+  overflow: hidden;
   padding: 30px 12% 25px;
   text-align: center;
   background: url(../images/header-bg.svg) repeat-x center top; }
