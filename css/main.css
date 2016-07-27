@@ -12,6 +12,15 @@ ul {
   padding: 0;
   list-style: none; }
 
+.table {
+  display: table; }
+
+.table-row {
+  display: table-row; }
+
+.table-cell {
+  display: table-cell; }
+
 .section-slider .slide {
   height: 442px; }
 .section-slider .slide1 {
@@ -295,7 +304,8 @@ ul {
 
 .goods-carousel {
   font-size: 0;
-  position: relative; }
+  position: relative;
+  margin-bottom: 50px; }
   .goods-carousel .goods-item {
     width: 15.3%;
     display: inline-block;
@@ -337,247 +347,164 @@ ul {
     background-color: #f5f5f5;
     z-index: -1; }
 
-.news-subscribe {
-  padding: 60px 0 105px;
-  background-color: #fffbf9; }
-  .news-subscribe .news-subscribe-container {
-    background-color: #fff;
-    height: 305px;
-    font-size: 0; }
-    .news-subscribe .news-subscribe-container .news,
-    .news-subscribe .news-subscribe-container .subscribe {
-      display: inline-block;
-      height: 100%;
-      vertical-align: top; }
-    .news-subscribe .news-subscribe-container .news {
-      width: calc(100% / 3 * 2);
-      background: url("../images/news-wave.svg") repeat-x center bottom; }
-      .news-subscribe .news-subscribe-container .news > div {
-        width: 50%;
-        display: inline-block;
-        height: 100%; }
-      .news-subscribe .news-subscribe-container .news .img-wrapper {
-        height: 100%;
-        display: inline-block;
-        width: 141px;
-        vertical-align: top;
-        background-size: contain; }
-    .news-subscribe .news-subscribe-container .text {
-      vertical-align: top;
-      height: 100%;
-      display: inline-block;
-      width: calc( 100% - 141px);
-      font-size: 15px;
+.news {
+  font-size: 0;
+  padding-bottom: 100px; }
+  .news .news-item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 23.8%;
+    margin-right: 1.6%;
+    border: 1px solid #f5f5f5;
+    color: #000000;
+    text-decoration: none;
+    vertical-align: top; }
+    .news .news-item .img-wrap img {
+      width: 100%; }
+    .news .news-item .uptext {
       font-family: AvenirNextRegular;
-      padding: 32px 60px 0 15px;
-      box-sizing: border-box; }
-    .news-subscribe .news-subscribe-container .head-text {
-      font-size: 24px;
       text-transform: uppercase;
-      margin-bottom: 42px; }
-    .news-subscribe .news-subscribe-container .underhead-text {
-      font-size: 16px;
-      font-weight: 600;
-      color: #3b517a;
-      line-height: 22px;
-      text-transform: uppercase; }
-    .news-subscribe .news-subscribe-container .subscribe {
-      width: calc(100% / 3);
-      height: 100%;
-      background-color: #f2f6f7;
-      position: relative; }
-      .news-subscribe .news-subscribe-container .subscribe:after {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 12px;
-        bottom: 0;
-        left: 0;
-        background: url("../images/subscribe-wave.svg") repeat-x center bottom; }
-      .news-subscribe .news-subscribe-container .subscribe .subscribe-container {
-        width: 75%;
-        margin: 0 auto; }
-        .news-subscribe .news-subscribe-container .subscribe .subscribe-container .text {
-          width: 100%;
-          padding: 27px 0 5px 0; }
-        .news-subscribe .news-subscribe-container .subscribe .subscribe-container .head-text {
-          margin-bottom: 20px;
-          text-align: center; }
-        .news-subscribe .news-subscribe-container .subscribe .subscribe-container form {
-          padding-top: 15px; }
-          .news-subscribe .news-subscribe-container .subscribe .subscribe-container form label {
-            display: block;
-            font-size: 16px;
-            color: #3b517a;
-            line-height: 26px; }
-          .news-subscribe .news-subscribe-container .subscribe .subscribe-container form .left {
-            display: inline-block;
-            float: left; }
-            .news-subscribe .news-subscribe-container .subscribe .subscribe-container form .left .radio:not(checked) {
-              position: absolute;
-              opacity: 0; }
-            .news-subscribe .news-subscribe-container .subscribe .subscribe-container form .left .radio:not(checked) + label {
-              position: relative;
-              padding: 0 0 0 30px; }
-            .news-subscribe .news-subscribe-container .subscribe .subscribe-container form .left .radio:not(checked) + label:before {
-              content: '';
-              position: absolute;
-              top: 4px;
-              left: 10px;
-              width: 9px;
-              height: 9px;
-              border: 2px solid #f2f6f7;
-              border-radius: 10em;
-              box-shadow: #3b517a 0px 0px 0px 1px;
-              background-color: transparent; }
-            .news-subscribe .news-subscribe-container .subscribe .subscribe-container form .left .radio:checked + label:before {
-              background-color: #3b517a; }
-          .news-subscribe .news-subscribe-container .subscribe .subscribe-container form .right {
-            display: inline-block;
-            float: right; }
-            .news-subscribe .news-subscribe-container .subscribe .subscribe-container form .right input {
-              border-radius: 3px;
-              display: block;
-              width: 195px;
-              line-height: 34px;
-              font-size: 16px;
-              font-family: AvenirNextRegular;
-              text-transform: uppercase;
-              text-align: center; }
-            .news-subscribe .news-subscribe-container .subscribe .subscribe-container form .right input[type="email"] {
-              background-color: #fff;
-              border: none;
-              box-shadow: inset 0 3px 2px 0 rgba(0, 0, 0, 0.11);
-              margin-bottom: 4px; }
-              .news-subscribe .news-subscribe-container .subscribe .subscribe-container form .right input[type="email"]:focus {
-                outline: none; }
-            .news-subscribe .news-subscribe-container .subscribe .subscribe-container form .right input[type="submit"] {
-              background-color: transparent;
-              border: 1px solid black;
-              line-height: 28px; }
-          .news-subscribe .news-subscribe-container .subscribe .subscribe-container form:after {
-            content: "";
-            display: table;
-            clear: both; }
-
-.gallery-slider {
-  padding: 29px 85px 34px; }
-  .gallery-slider .head-text {
-    font-size: 34px;
-    text-align: center;
-    font-family: a_AvanteLtDemiBold;
-    margin-bottom: 30px; }
-    .gallery-slider .head-text span {
-      color: #7a92c6; }
-  .gallery-slider .underhead-text {
-    text-align: center;
-    font-size: 15px;
-    font-family: AvenirNextMedium; }
-    .gallery-slider .underhead-text span {
-      color: #3b517a; }
-  .gallery-slider .slider {
-    margin: 25px 0 30px; }
-    .gallery-slider .slider .slider-item {
-      display: inline-block;
-      width: 100%;
-      background-color: #7a92c6;
-      position: relative; }
-      .gallery-slider .slider .slider-item .img-wrapper {
-        width: calc(100% - 60px);
-        margin: 30px; }
-        .gallery-slider .slider .slider-item .img-wrapper img {
-          background-color: #fff;
-          padding: 8px;
-          width: calc(100% - 16px);
-          position: relative;
-          z-index: 1; }
-      .gallery-slider .slider .slider-item:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: url("../images/gallery-wave.svg") repeat;
-        z-index: 0; }
-    .gallery-slider .slider .owl-item:nth-child(even) .slider-item {
-      background-color: #ed6990; }
-    .gallery-slider .slider.owl-carousel .owl-controls {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: -1; }
-      .gallery-slider .slider.owl-carousel .owl-controls .owl-nav div {
-        position: absolute;
-        top: 50%;
-        width: 22px;
-        height: 40px;
-        transform: translateY(-50%); }
-      .gallery-slider .slider.owl-carousel .owl-controls .owl-nav .owl-prev {
-        left: -60px;
-        background: url(../images/slide-arrow-prev.svg) no-repeat center; }
-      .gallery-slider .slider.owl-carousel .owl-controls .owl-nav .owl-next {
-        right: -60px;
-        background: url(../images/slide-arrow-next.svg) no-repeat center; }
-  .gallery-slider .gallery-button-container {
-    text-align: center; }
-    .gallery-slider .gallery-button-container button {
-      font-family: AvenirNextRegular;
       font-size: 16px;
       text-align: center;
-      line-height: 28px;
-      width: 306px;
-      border-radius: 6px;
-      margin: 0 7px;
-      display: inline-block;
-      background-color: #fff;
+      line-height: 34px; }
+    .news .news-item .text-container {
+      padding: 25px 20px;
+      background: url(../images/black-wave.svg) repeat-x center 2%;
+      position: relative; }
+      .news .news-item .text-container:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        bottom: 10px;
+        right: 15px;
+        width: 18px;
+        height: 11.2px;
+        background: url(../images/more-news.svg) no-repeat; }
+    .news .news-item .head-text {
       text-transform: uppercase;
-      cursor: pointer; }
-      .gallery-slider .gallery-button-container button.upload {
-        border: 1px solid #ed6990; }
-      .gallery-slider .gallery-button-container button.view {
-        border: 1px solid #7a92c6; }
+      font-size: 30px;
+      font-family: a_AvanteLtDemiBold;
+      margin-bottom: 10px; }
+    .news .news-item .main-text {
+      font-size: 15px;
+      line-height: 20px;
+      font-family: AvenirNextRegular;
+      color: #3c3c3c; }
+    .news .news-item:last-child {
+      margin-right: 0; }
 
-.gift-card {
-  padding: 135px 0 140px;
-  background-color: #fffbf9; }
-  .gift-card .gift-card-container {
-    height: 102px;
-    background-color: #f2f6f7; }
-    .gift-card .gift-card-container .text {
-      padding: 31px 6% 0 21%;
-      text-transform: uppercase;
-      display: inline-block;
-      vertical-align: top;
-      text-align: right;
-      font-family: AvenirNextMedium;
-      font-size: 40px; }
-      .gift-card .gift-card-container .text .down {
+.subscribe {
+  background: url("../images/black-wave.svg") repeat-x center top;
+  position: relative;
+  text-align: center; }
+  .subscribe:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/black-wave.svg") repeat-x center bottom;
+    z-index: -1; }
+  .subscribe .subscribe-container {
+    display: inline-block;
+    width: 1172px;
+    padding: 60px 0;
+    box-sizing: border-box; }
+    .subscribe .subscribe-container:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .subscribe .subscribe-container .text-block {
+      float: left;
+      box-sizing: border-box;
+      width: 630px;
+      padding-left: 120px;
+      text-align: left;
+      background: url("../images/subscribe.svg") no-repeat center left; }
+      .subscribe .subscribe-container .text-block .head-text {
+        font-size: 30px;
+        line-height: 40px;
+        text-transform: uppercase;
+        font-family: AvenirNextRegular; }
+      .subscribe .subscribe-container .text-block .main-text {
+        font-size: 15px;
         font-family: AvenirNextRegular;
-        font-size: 16px; }
-    .gift-card .gift-card-container .img-wrapper {
-      width: 175px;
-      display: inline-block;
-      vertical-align: top;
-      margin-top: -7px; }
-      .gift-card .gift-card-container .img-wrapper img {
-        width: 100%;
-        height: auto; }
-    .gift-card .gift-card-container button {
-      vertical-align: top;
-      display: inline-block;
-      cursor: pointer;
-      width: 252px;
-      line-height: 40px;
-      border: 1px solid #000;
-      border-radius: 3px;
-      margin-top: 27px;
-      text-transform: uppercase;
-      background-color: #fff;
-      font-size: 22px;
-      margin-left: 8%; }
+        line-height: 20px; }
+    .subscribe .subscribe-container form {
+      float: right;
+      margin-top: 30px; }
+      .subscribe .subscribe-container form input {
+        border-radius: 3px;
+        width: 196px;
+        padding: 0;
+        line-height: 34px;
+        font-size: 16px;
+        font-family: AvenirNextRegular;
+        text-transform: uppercase;
+        text-align: center;
+        border: 1px solid black; }
+      .subscribe .subscribe-container form input[type="email"] {
+        background-color: #fff;
+        border-color: #e2e2e2;
+        margin-right: 19px; }
+        .subscribe .subscribe-container form input[type="email"]:focus {
+          outline: none; }
+      .subscribe .subscribe-container form input[type="submit"] {
+        background-color: transparent;
+        border: 1px solid black; }
+
+.designers {
+  padding: 94px 0;
+  text-align: center;
+  position: relative; }
+  .designers .designers-wrapper {
+    width: 83.3%;
+    display: inline-block; }
+  .designers .head-text {
+    font-size: 30px;
+    font-family: a_AvanteLtDemiBold;
+    text-align: center;
+    line-height: 35px;
+    text-transform: uppercase; }
+  .designers .tabs-container {
+    position: relative;
+    margin-top: 5px; }
+    .designers .tabs-container .tabs {
+      font-size: 0; }
+      .designers .tabs-container .tabs .tab {
+        display: inline-block;
+        width: 18.4%;
+        border: 1px solid #f5f5f5;
+        border-bottom: none;
+        box-sizing: border-box;
+        margin-right: 2%; }
+        .designers .tabs-container .tabs .tab .tab-content {
+          display: none;
+          position: absolute;
+          font-size: 15px;
+          width: 100%; }
+        .designers .tabs-container .tabs .tab .head {
+          font-size: 18px;
+          line-height: 35px;
+          cursor: pointer; }
+        .designers .tabs-container .tabs .tab.active {
+          border-color: #000000; }
+          .designers .tabs-container .tabs .tab.active .tab-content {
+            display: block; }
+        .designers .tabs-container .tabs .tab:last-child {
+          margin-right: 0; }
+  .designers:before, .designers:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 170px;
+    background-color: #f5f5f5; }
+  .designers:after {
+    top: auto;
+    bottom: 20px; }
 
 footer {
   height: 215px;

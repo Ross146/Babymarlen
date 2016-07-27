@@ -36,6 +36,35 @@
       height: 480px;
     }
   }
+  .news{
+    .news-item{
+      .uptext{
+        font-size: 14px;
+      }
+      .head-text{
+        font-size: 24px;
+      }
+    }
+  }
+  .subscribe{
+    .subscribe-container{
+      width: 940px;
+      .text-block{
+        width: 670px;
+        padding-left: 160px;
+      }
+      form{
+        margin-top: 10px;
+        input{
+          display: block;
+        }
+        input[type="email"]{
+          margin-right: 0;
+          margin-bottom: 7px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -220,6 +249,45 @@
       }
     }
   }
+  .news{
+    .news-item{
+      .head-text{
+        font-size: 19px;
+      }
+      .main-text{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .subscribe{
+    .subscribe-container{
+      padding: 40px 25px;
+      width: 100%;
+      .text-block{
+        float: none;
+        display:inline-block;
+        vertical-align: top;
+        padding: 0 30px 0 130px;
+        width: 70%;
+        .head-text{
+          font-size: 20px;
+          line-height: 30px;
+        }
+        .main-text{
+          font-size: 14px;
+        }
+      }
+      form{
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 15px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -320,6 +388,18 @@
       }
     }
   }
+  .news{
+    .news-item{
+      width: 49.2%;
+      margin-bottom: 11px;
+      &:nth-child(2){
+        margin-right: 0;
+      }
+      .head-text{
+        font-size: 18px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -327,6 +407,33 @@
     .items{
       height: 264px;
       margin-bottom: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .subscribe{
+    .subscribe-container{
+      padding: 0 25px 25px;
+      .text-block{
+        width: 100%;
+        padding: 70px 0 0 0;
+        background-position: center 20px;
+        background-size: 50px;
+        .head-text{
+          text-align: center;
+        }
+      }
+      form{
+        input[type='email'],
+        input[type='submit']{
+          display: inline-block;
+        }
+        input[type='email']{
+          margin-bottom: 0;
+          margin-right: 5px;
+        }
+      }
     }
   }
 }
@@ -517,6 +624,29 @@
     }
     &:after{
       height: 100%;
+    }
+  }
+  .news{
+    .news-item{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+  .subscribe{
+    .subscribe-container{
+      form{
+        width: 100%;
+        input[type='email'],
+        input[type='submit']{
+          display: block;
+          width: 100%;
+        }
+        input[type='email']{
+          margin-right: 0;
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 }
