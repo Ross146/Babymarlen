@@ -19,7 +19,7 @@
 
     function toogleDesignersTabs () {
         ($(window).width() <=500)? $('.designers .tab').removeClass('active'): $('.designers .tab:first-child').addClass('active').siblings().removeClass('active') ;
-        $('.designers .tab .head').click(function(){
+        $('.designers .tab .head').mouseenter(function(){
             var $this = $(this);
             if($(window).width() <= 500 && $this.parent().hasClass('active')){
                 $this.parent().removeClass('active');

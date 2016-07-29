@@ -95,7 +95,8 @@ ul {
 
 .section-main {
   font-size: 0;
-  padding-top: 65px; }
+  padding-top: 65px;
+  margin-bottom: 70px; }
   .section-main .section-category {
     width: 75%;
     font-size: 0;
@@ -133,7 +134,7 @@ ul {
             left: 0;
             width: 100%;
             height: 22px;
-            background: url("../images/section-main-waves.svg") repeat-x center top; }
+            background: url("../images/white-wave.svg") repeat-x center top; }
       .section-main .section-category .section-category-item:first-child, .section-main .section-category .section-category-item:nth-child(4) {
         margin-left: -.8%; }
       .section-main .section-category .section-category-item.boys .wrap-bg {
@@ -203,10 +204,11 @@ ul {
           font-family: AvenirNextRegular;
           line-height: 23px; }
         .section-main .section-delivery-payment-info .delivery-payment-info-container .info-item-container .info-item:last-child {
-          margin-bottom: 65px; }
+          margin-bottom: 60px; }
     .section-main .section-delivery-payment-info .learn-more {
-      background: url(../images/black-wave.svg) repeat-x center top; }
+      background-color: #fafafa; }
       .section-main .section-delivery-payment-info .learn-more a {
+        background: url(../images/gray-wave.svg) repeat-x center top;
         display: inline-block;
         width: 100%;
         text-decoration: none;
@@ -221,7 +223,8 @@ ul {
           text-decoration: none; }
 
 .section-banners {
-  font-size: 0; }
+  font-size: 0;
+  margin-bottom: 70px; }
   .section-banners .items {
     display: inline-block;
     height: 510px;
@@ -287,7 +290,8 @@ ul {
         text-decoration: none;
         width: 49%; }
         .section-banners .instagram-gallery .btn-container a:hover, .section-banners .instagram-gallery .btn-container a:active, .section-banners .instagram-gallery .btn-container a:focus {
-          text-decoration: none; }
+          text-decoration: none;
+          background-color: #f5f5f5; }
         .section-banners .instagram-gallery .btn-container a.desktop:first-child {
           margin-right: 2%; }
         .section-banners .instagram-gallery .btn-container a.mobile {
@@ -296,7 +300,7 @@ ul {
 .goods-carousel {
   font-size: 0;
   position: relative;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
   .goods-carousel .goods-item {
     width: 15.3%;
     display: inline-block;
@@ -309,25 +313,34 @@ ul {
     border-bottom: 1px solid #f5f5f5;
     margin-right: 1.64%; }
     .goods-carousel .goods-item .text {
-      font-size: 15px;
       text-transform: uppercase;
       line-height: 20px; }
     .goods-carousel .goods-item .brand-info {
-      font-family: AvenirNextRegular;
+      font-family: AvenirNextMedium;
       font-size: 18px; }
     .goods-carousel .goods-item .item-info {
       color: gray;
+      font-size: 14px;
       font-family: AvenirNextRegular; }
     .goods-carousel .goods-item .price-info {
-      font-family: AvenirNextRegular;
-      font-size: 16px; }
+      font-family: AvenirNextMedium;
+      font-size: 16px;
+      margin-top: 2px; }
     .goods-carousel .goods-item .img-wrapper {
       width: 85%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      position: relative; }
       .goods-carousel .goods-item .img-wrapper img {
         width: 100%; }
+        .goods-carousel .goods-item .img-wrapper img.second {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0; }
     .goods-carousel .goods-item:last-child {
       margin-right: 0; }
+    .goods-carousel .goods-item:hover .img-wrapper img.second {
+      opacity: 1; }
   .goods-carousel:after {
     position: absolute;
     content: '';
@@ -340,7 +353,7 @@ ul {
 
 .news {
   font-size: 0;
-  padding-bottom: 100px; }
+  margin-bottom: 100px; }
   .news .news-item {
     display: inline-block;
     box-sizing: border-box;
@@ -360,7 +373,7 @@ ul {
       line-height: 34px; }
     .news .news-item .text-container {
       padding: 25px 20px;
-      background: url(../images/black-wave.svg) repeat-x center 2%;
+      background: url(../images/gray-wave.svg) repeat-x center 2%;
       position: relative; }
       .news .news-item .text-container:after {
         content: '';
@@ -385,7 +398,7 @@ ul {
       margin-right: 0; }
 
 .subscribe {
-  background: url("../images/black-wave.svg") repeat-x center top;
+  background: url("../images/gray-wave.svg") repeat-x center top;
   position: relative;
   text-align: center; }
   .subscribe:after {
@@ -395,7 +408,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../images/black-wave.svg") repeat-x center bottom;
+    background: url("../images/gray-wave.svg") repeat-x center bottom;
     z-index: -1; }
   .subscribe .subscribe-container {
     display: inline-block;
@@ -434,19 +447,21 @@ ul {
         font-family: AvenirNextRegular;
         text-transform: uppercase;
         text-align: center;
-        border: 1px solid black; }
+        border: 1px solid black;
+        background-color: #ffffff; }
       .subscribe .subscribe-container form input[type="email"] {
-        background-color: #fff;
         border-color: #e2e2e2;
         margin-right: 19px; }
         .subscribe .subscribe-container form input[type="email"]:focus {
           outline: none; }
       .subscribe .subscribe-container form input[type="submit"] {
-        background-color: transparent;
-        border: 1px solid black; }
+        cursor: pointer;
+        transition: background-color ease .3s; }
+        .subscribe .subscribe-container form input[type="submit"]:hover {
+          background-color: #f5f5f5; }
 
 .designers {
-  padding: 94px 0;
+  padding: 100px 0;
   text-align: center; }
   .designers .top {
     height: 260px;
@@ -487,9 +502,10 @@ ul {
         border: 1px solid #f5f5f5;
         border-bottom: none;
         box-sizing: border-box;
-        margin-right: 2%; }
+        margin-right: 2%;
+        transition: border ease .2s; }
         .designers .tabs-container .tabs .tab .tab-content {
-          opacity: 0;
+          display: none;
           position: absolute;
           width: 100%;
           padding-top: 15px;
@@ -499,19 +515,24 @@ ul {
             width: 18.4%;
             margin-right: 2%;
             vertical-align: top; }
-            .designers .tabs-container .tabs .tab .tab-content ul li a {
-              display: block;
-              font-size: 15px;
-              text-align: left;
-              font-family: AvenirNextRegular;
-              color: #3c3c3c;
-              line-height: 20px;
-              text-decoration: none; }
-              .designers .tabs-container .tabs .tab .tab-content ul li a:hover, .designers .tabs-container .tabs .tab .tab-content ul li a:active, .designers .tabs-container .tabs .tab .tab-content ul li a:focus {
-                text-decoration: none; }
+            .designers .tabs-container .tabs .tab .tab-content ul li {
+              text-align: left; }
+              .designers .tabs-container .tabs .tab .tab-content ul li a {
+                display: inline-block;
+                font-size: 15px;
+                text-align: left;
+                font-family: AvenirNextRegular;
+                color: #3c3c3c;
+                line-height: 20px;
+                text-decoration: none;
+                transition: background-color ease .1s, color ease .1s; }
+                .designers .tabs-container .tabs .tab .tab-content ul li a:hover, .designers .tabs-container .tabs .tab .tab-content ul li a:active, .designers .tabs-container .tabs .tab .tab-content ul li a:focus {
+                  text-decoration: none;
+                  background-color: #000000;
+                  color: #ffffff; }
             .designers .tabs-container .tabs .tab .tab-content ul:last-child {
               margin-right: 0; }
-          .designers .tabs-container .tabs .tab .tab-content.tablet {
+          .designers .tabs-container .tabs .tab .tab-content.tablet ul {
             display: none; }
         .designers .tabs-container .tabs .tab .head {
           font-size: 18px;
@@ -520,15 +541,30 @@ ul {
         .designers .tabs-container .tabs .tab.active {
           border-color: #000000; }
           .designers .tabs-container .tabs .tab.active .tab-content {
-            opacity: 1; }
+            display: block; }
         .designers .tabs-container .tabs .tab:last-child {
           margin-right: 0; }
 
 footer {
   height: 215px;
-  background: url(../images/black-wave.svg) repeat-x center top;
+  background: url(../images/gray-wave.svg) repeat-x center top;
   font-size: 0;
-  padding: 43px 0 15px; }
+  padding: 43px 0 15px;
+  position: relative; }
+  footer .up-arrow {
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    top: -80px;
+    right: 5px;
+    background-color: #e2e2e2;
+    background-image: url(../images/up-arrow.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: background-color ease .5s; }
+    footer .up-arrow:hover {
+      background-color: #c3c3c3; }
   footer > div {
     display: inline-block;
     width: calc(100% / 3);
