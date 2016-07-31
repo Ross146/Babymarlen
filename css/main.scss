@@ -679,10 +679,9 @@ ul{
 
 
 footer{
-  height: 215px;
   background: url(../images/gray-wave.svg) repeat-x center top;
   font-size: 0;
-  padding: 43px 0 15px;
+  padding: 43px 7.5% 30px;
   position: relative;
   .up-arrow{
     position: absolute;
@@ -714,6 +713,9 @@ footer{
     min-height: 100px;
   }
   .left{
+    .width-wrap{
+      margin: 0;
+    }
     .head-text{
       font-family:a_AvanteLtDemiBold;
       font-size: 16px;
@@ -789,6 +791,10 @@ footer{
     background-color: #e2e2e2;
   }
   .right{
+    .width-wrap{
+      margin:0;
+      float: right;
+    }
     .social{
       text-align: center;
       .text{

@@ -546,10 +546,9 @@ ul {
           margin-right: 0; }
 
 footer {
-  height: 215px;
   background: url(../images/gray-wave.svg) repeat-x center top;
   font-size: 0;
-  padding: 43px 0 15px;
+  padding: 43px 7.5% 30px;
   position: relative; }
   footer .up-arrow {
     position: absolute;
@@ -576,6 +575,8 @@ footer {
     padding: 0 10px;
     margin: 0 auto;
     min-height: 100px; }
+  footer .left .width-wrap {
+    margin: 0; }
   footer .left .head-text {
     font-family: a_AvanteLtDemiBold;
     font-size: 16px;
@@ -632,6 +633,9 @@ footer {
     right: 0;
     bottom: 0;
     background-color: #e2e2e2; }
+  footer .right .width-wrap {
+    margin: 0;
+    float: right; }
   footer .right .social {
     text-align: center; }
     footer .right .social .text {
