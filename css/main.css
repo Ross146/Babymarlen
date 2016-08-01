@@ -664,4 +664,288 @@ footer {
     letter-spacing: 0.7px;
     text-transform: uppercase; }
 
+.catalog {
+  font-size: 0; }
+  .catalog .bread-crumbs {
+    padding: 25px 8.3%; }
+    .catalog .bread-crumbs li {
+      display: inline-block;
+      font-size: 14px;
+      font-family: AvenirNextRegular;
+      padding: 0 1px; }
+      .catalog .bread-crumbs li a {
+        color: #3c3c3c;
+        text-decoration: none; }
+        .catalog .bread-crumbs li a:hover, .catalog .bread-crumbs li a:active, .catalog .bread-crumbs li a:focus {
+          text-decoration: none; }
+  .catalog .filters, .catalog .main-content {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top; }
+  .catalog .filters {
+    width: 16.6%;
+    margin-right: 1.6%; }
+    .catalog .filters .filter .head-text {
+      position: relative; }
+      .catalog .filters .filter .head-text:after {
+        content: '';
+        position: absolute;
+        right: 5%;
+        top: -10px;
+        background: url(../images/mobile-designers-arrow.png) no-repeat center;
+        background-size: 100%;
+        transition: transform ease .3s;
+        width: 30px;
+        height: 30px; }
+    .catalog .filters .filter ul, .catalog .filters .filter form {
+      max-height: 255px;
+      transition: max-height ease .3s;
+      overflow: hidden; }
+    .catalog .filters .filter.hidden .head-text:after {
+      transform: rotate(180deg); }
+    .catalog .filters .filter.hidden ul, .catalog .filters .filter.hidden form {
+      max-height: 0; }
+    .catalog .filters .filter.hidden .show-more {
+      line-height: 0; }
+    .catalog .filters .checked-filters .head-text {
+      font-family: AvenirNextMedium; }
+    .catalog .filters .checked-filters .clear-text {
+      font-family: AvenirNextRegular;
+      font-size: 14px;
+      color: #9b9b9b;
+      text-transform: lowercase;
+      margin-bottom: 10px;
+      display: block;
+      padding-left: 9%; }
+    .catalog .filters .checked-filters .submit {
+      line-height: 34px;
+      border: 1px solid #000000;
+      border-radius: 3px;
+      font-size: 16px;
+      text-transform: uppercase;
+      width: 200px;
+      display: block;
+      margin: 25px auto 0;
+      background-color: transparent;
+      color: #000;
+      text-decoration: none;
+      text-align: center; }
+      .catalog .filters .checked-filters .submit:hover, .catalog .filters .checked-filters .submit:active, .catalog .filters .checked-filters .submit:focus {
+        text-decoration: none; }
+      .catalog .filters .checked-filters .submit:hover {
+        background-color: #a5a5a5; }
+    .catalog .filters .head-text {
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      padding-left: 9%;
+      font-family: AvenirNextRegular;
+      cursor: pointer;
+      text-align: left; }
+    .catalog .filters .show-more {
+      font-family: AvenirNextRegular;
+      font-size: 16px;
+      color: #000000;
+      margin-top: 5px;
+      display: inline-block;
+      padding-left: 9%;
+      cursor: pointer;
+      text-decoration: underline;
+      line-height: 1;
+      transition: line-height ease .3s;
+      overflow: hidden; }
+    .catalog .filters .filter-item {
+      font-size: 15px;
+      line-height: 21px;
+      display: block;
+      font-family: AvenirNextRegular;
+      color: #000000;
+      padding: 0 3%;
+      cursor: pointer; }
+      .catalog .filters .filter-item .plus {
+        padding: 0 5px; }
+      .catalog .filters .filter-item .count {
+        float: right;
+        color: #9b9b9b; }
+      .catalog .filters .filter-item:hover {
+        color: #616161; }
+    .catalog .filters > div {
+      background-color: #f2f2f2;
+      padding: 15px 0;
+      margin-bottom: 12px; }
+    .catalog .filters .filter-price {
+      text-align: center; }
+      .catalog .filters .filter-price form {
+        padding: 0 7%; }
+      .catalog .filters .filter-price .top {
+        font-family: AvenirNextRegular;
+        font-size: 16px; }
+        .catalog .filters .filter-price .top > span {
+          position: absolute;
+          line-height: 34px;
+          margin-left: -7px; }
+        .catalog .filters .filter-price .top input[type=text] {
+          width: 31%;
+          line-height: 34px;
+          border: 1px solid #e2e2e2;
+          text-align: center;
+          margin: 0 2% 0 0;
+          padding: 0;
+          color: #9b9b9b;
+          border-radius: 3px; }
+        .catalog .filters .filter-price .top input[type=submit] {
+          line-height: 34px;
+          font-size: 14px;
+          text-transform: uppercase;
+          padding: 0;
+          width: 25%;
+          text-align: center;
+          margin-right: 0;
+          cursor: pointer;
+          border: 1px solid #e2e2e2;
+          border-radius: 3px; }
+      .catalog .filters .filter-price input[type=range] {
+        -webkit-appearance: none;
+        margin: 30px 0;
+        width: 50%; }
+      .catalog .filters .filter-price input[type=range]:focus {
+        outline: none; }
+      .catalog .filters .filter-price input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 1px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: #9b9b9b; }
+      .catalog .filters .filter-price input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #9b9b9b; }
+      .catalog .filters .filter-price input[type=range]::-webkit-slider-thumb {
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        background: #ffffff;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -10px; }
+      .catalog .filters .filter-price input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 1px;
+        cursor: pointer;
+        animate: 0.2s;
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+        background: #9b9b9b; }
+      .catalog .filters .filter-price input[type=range]::-moz-range-thumb {
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+        border-radius: 10px;
+        height: 20px;
+        width: 20px;
+        background: #ffffff;
+        cursor: pointer; }
+      .catalog .filters .filter-price input[type=range]::-ms-track {
+        width: 100%;
+        height: 8.4px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: transparent;
+        border-color: transparent;
+        border-width: 16px 0;
+        color: transparent; }
+      .catalog .filters .filter-price input[type=range]::-ms-fill-lower {
+        background: #2a6495;
+        border: 0.2px solid #010101;
+        border-radius: 2.6px;
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+      .catalog .filters .filter-price input[type=range]::-ms-fill-upper {
+        background: #3071a9;
+        border: 0.2px solid #010101;
+        border-radius: 2.6px;
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+      .catalog .filters .filter-price input[type=range]::-ms-thumb {
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+        border: 1px solid #000000;
+        height: 36px;
+        width: 16px;
+        border-radius: 3px;
+        background: #ffffff;
+        cursor: pointer; }
+      .catalog .filters .filter-price input[type=range]:focus::-ms-fill-lower {
+        background: #3071a9; }
+      .catalog .filters .filter-price input[type=range]:focus::-ms-fill-upper {
+        background: #367ebd; }
+  .catalog .main-content {
+    width: 81.8%; }
+    .catalog .main-content .banners .banner {
+      text-decoration: none;
+      color: #000000; }
+      .catalog .main-content .banners .banner > div {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        box-sizing: border-box; }
+      .catalog .main-content .banners .banner img {
+        width: 100%;
+        height: auto; }
+      .catalog .main-content .banners .banner .text-container {
+        padding: 90px 6% 0 2%; }
+        .catalog .main-content .banners .banner .text-container .head-text {
+          font-size: 30px;
+          font-family: a_AvanteLtDemiBold;
+          line-height: 55px; }
+        .catalog .main-content .banners .banner .text-container .underhead-text {
+          font-family: AvenirNextRegular;
+          font-size: 14px;
+          margin-bottom: 20px; }
+        .catalog .main-content .banners .banner .text-container .text {
+          font-family: AvenirNextRegular;
+          font-size: 15px;
+          line-height: 20px;
+          color: #3c3c3c; }
+    .catalog .main-content .sort-container {
+      float: right;
+      margin: 25px 3%; }
+      .catalog .main-content .sort-container .sort {
+        display: inline-block;
+        /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+        margin-right: 80px; }
+        .catalog .main-content .sort-container .sort label {
+          font-family: AvenirNextRegular;
+          font-size: 14px;
+          color: #9b9b9b;
+          margin-right: 5px; }
+        .catalog .main-content .sort-container .sort select {
+          font-size: 14px;
+          line-height: 24px;
+          width: 155px;
+          padding-left: 10px;
+          font-family: AvenirNextRegular;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          background-color: #ffffff;
+          color: #4a4a4a;
+          border: 1px solid #e2e2e2;
+          outline: none;
+          display: inline-block;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          cursor: pointer;
+          background-image: url(../images/dropdown-arrow.svg);
+          background-repeat: no-repeat;
+          background-position: 95% center; }
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+          .catalog .main-content .sort-container .sort select {
+            padding-right: 18px; } }
+      .catalog .main-content .sort-container .limiter {
+        display: inline-block; }
+        .catalog .main-content .sort-container .limiter span {
+          font-size: 14px;
+          line-height: 19px;
+          font-family: AvenirNextRegular;
+          text-transform: uppercase;
+          cursor: pointer;
+          margin: 0 5px; }
+          .catalog .main-content .sort-container .limiter span.active {
+            font-family: AvenirNextDemi; }
+
 /*# sourceMappingURL=main.css.map */

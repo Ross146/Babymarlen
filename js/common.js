@@ -43,6 +43,12 @@
         });
     };
 
+    function filterDesktopHide () {
+        $('.filters .filter .head-text').click(function(){
+            $(this).parent().toggleClass('hidden')
+        })
+    }
+
     $('.section-slider').owlCarousel({
         items: 1,
         loop: true
@@ -53,6 +59,7 @@
 
     toogleDesignersTabs();
     calcDesignersTablesColums();
+    filterDesktopHide();
 
     $(window).resize(function () {
         gallerySlide($('.instagram-gallery .photo-container'));
