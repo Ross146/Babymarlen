@@ -837,6 +837,17 @@ footer{
 
 .catalog{
   font-size: 0;
+  .mobile-back-btn{
+    font-size: 16px;
+    font-family: AvenirNextRegular;
+    color: #9b9b9b;
+    line-height: 58px;
+    text-transform: uppercase;
+    padding-left: 35px;
+    background: url("../images/left-arrow.svg") no-repeat 10px 50%;
+    cursor: pointer;
+    display: none;
+  }
   .bread-crumbs{
     padding: 25px 8.3%;
     li{
@@ -912,7 +923,8 @@ footer{
         border-radius: 3px;
         font-size: 16px;
         text-transform: uppercase;
-        width: 200px;
+        max-width: 200px;
+        width: 100%;
         display: block;
         margin: 25px auto 0;
         background-color: transparent;
@@ -1129,11 +1141,12 @@ footer{
           background-size: cover;
         }
         .text-container{
-          padding: 70px 6% 0 2%;
+          padding: 90px 6% 0 2%;
+          overflow: hidden;
           .head-text{
             font-size: 30px;
             font-family: a_AvanteLtDemiBold;
-            line-height: 55px;
+            margin-bottom: 20px;
           }
           .underhead-text{
             font-family: AvenirNextRegular;
@@ -1206,6 +1219,20 @@ footer{
           }
         }
       }
+      .mobile-filter-btn{
+        font-family: AvenirNextRegular;
+        font-size: 16px;
+        width: 121px;
+        line-height: 34px;
+        border: 1px solid $greyish-brown;
+        color: $greyish-brown;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 3px;
+        float: right;
+        cursor: pointer;
+        display: none;
+      }
     }
     .goods-container{
       margin-bottom: 60px;
@@ -1219,14 +1246,33 @@ footer{
         }
         .heart{
           position: absolute;
+          z-index: 1;
           top: 0;
           right: 0;
           width: 20px;
           height: 18.3px;
           background: url(../images/heart-gray.svg) no-repeat center;
         }
+        .new{
+          position: absolute;
+          z-index: 1;
+          top: 23px;
+          right: 0;
+          width: 36px;
+          height: 18px;
+          background-color: #000;
+          font-family: AvenirNextRegular;
+          font-size: 13px;
+          line-height: 16px;
+          text-align: center;
+          color: #fff;
+          display: none;
+        }
         &.favorite .heart{
           background: url(../images/heart-pink.svg) no-repeat center;
+        }
+        &.new .new{
+          display: block;
         }
       }
       &:after{
@@ -1295,6 +1341,17 @@ footer{
           }
         }
       }
+    }
+    .mobile-showmore-btn{
+      line-height: 43px;
+      max-width: 288px;
+      margin: 0 auto;
+      border: 1px solid #e2e2e2;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: AvenirNextRegular;
+      font-size: 18px;
+      display: none;
     }
   }
 }
