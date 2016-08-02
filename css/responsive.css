@@ -91,11 +91,11 @@
     .section-banners .instagram-gallery .btn-container a.desktop:first-child {
       margin-bottom: 8px; }
 
-  .goods-carousel .goods-item .brand-info {
+  .goods-container .goods-item .brand-info {
     font-size: 16px; }
-  .goods-carousel .goods-item .item-info {
+  .goods-container .goods-item .item-info {
     font-size: 13px; }
-  .goods-carousel .goods-item .price-info {
+  .goods-container .goods-item .price-info {
     font-size: 14px; }
 
   .designers .tabs-container .tabs .tab .tab-content ul li a {
@@ -130,17 +130,17 @@
     .section-banners .instagram-gallery .btn-container a.mobile:nth-child(2) {
       margin-right: 2%; }
 
-  .goods-carousel .goods-item {
+  .goods-container .goods-item {
     width: 23.75%; }
-    .goods-carousel .goods-item .brand-info {
+    .goods-container .goods-item .brand-info {
       font-size: 16px; }
-    .goods-carousel .goods-item .item-info {
+    .goods-container .goods-item .item-info {
       font-size: 13px; }
-    .goods-carousel .goods-item .price-info {
+    .goods-container .goods-item .price-info {
       font-size: 14px; }
-    .goods-carousel .goods-item:nth-child(5), .goods-carousel .goods-item:nth-child(6) {
+    .goods-container .goods-item:nth-child(5), .goods-container .goods-item:nth-child(6) {
       display: none; }
-    .goods-carousel .goods-item:nth-child(4) {
+    .goods-container .goods-item:nth-child(4) {
       margin-right: 0; }
 
   .news .news-item .head-text {
@@ -281,11 +281,11 @@
     .section-banners .items {
       height: 280px; }
 
-  .goods-carousel {
+  .goods-container {
     margin-bottom: 60px; }
-    .goods-carousel .goods-item .img-wrapper {
+    .goods-container .goods-item .img-wrapper {
       width: 95%; }
-    .goods-carousel .goods-item .text {
+    .goods-container .goods-item .text {
       line-height: 16px; }
 
   .news {
@@ -347,11 +347,11 @@
   .section-banners .instagram-gallery .head-text {
     font-size: 21px; }
 
-  .goods-carousel .goods-item .brand-info {
+  .goods-container .goods-item .brand-info {
     font-size: 12px; }
-  .goods-carousel .goods-item .item-info {
+  .goods-container .goods-item .item-info {
     font-size: 11px; }
-  .goods-carousel .goods-item .price-info {
+  .goods-container .goods-item .price-info {
     font-size: 12px; }
 
   .designers .tabs-container .tabs .tab .tab-content ul li a {
@@ -450,15 +450,15 @@
     .section-banners .instagram-gallery .photo-container .img-wrap {
       width: auto; }
 
-  .goods-carousel .goods-item {
+  .goods-container .goods-item {
     width: 48%;
     margin-top: 15px;
     margin-right: 4%; }
-    .goods-carousel .goods-item:nth-child(2) {
+    .goods-container .goods-item:nth-child(2) {
       margin-right: 0; }
-    .goods-carousel .goods-item:nth-child(3), .goods-carousel .goods-item:nth-child(4) {
+    .goods-container .goods-item:nth-child(3), .goods-container .goods-item:nth-child(4) {
       margin-bottom: 15px; }
-  .goods-carousel:after {
+  .goods-container:after {
     height: 100%; }
 
   .news .news-item {
