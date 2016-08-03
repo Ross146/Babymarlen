@@ -727,7 +727,8 @@ footer {
       margin-bottom: 10px;
       display: block;
       padding-left: 9%; }
-    .catalog .filters .checked-filters .submit {
+    .catalog .filters .checked-filters .submit,
+    .catalog .filters .checked-filters .clear-text-mobile {
       line-height: 34px;
       border: 1px solid #000000;
       border-radius: 3px;
@@ -740,11 +741,18 @@ footer {
       background-color: transparent;
       color: #000;
       text-decoration: none;
-      text-align: center; }
-      .catalog .filters .checked-filters .submit:hover, .catalog .filters .checked-filters .submit:active, .catalog .filters .checked-filters .submit:focus {
+      text-align: center;
+      font-family: AvenirNextRegular; }
+      .catalog .filters .checked-filters .submit:hover, .catalog .filters .checked-filters .submit:active, .catalog .filters .checked-filters .submit:focus,
+      .catalog .filters .checked-filters .clear-text-mobile:hover,
+      .catalog .filters .checked-filters .clear-text-mobile:active,
+      .catalog .filters .checked-filters .clear-text-mobile:focus {
         text-decoration: none; }
-      .catalog .filters .checked-filters .submit:hover {
+      .catalog .filters .checked-filters .submit:hover,
+      .catalog .filters .checked-filters .clear-text-mobile:hover {
         background-color: #a5a5a5; }
+    .catalog .filters .checked-filters .clear-text-mobile {
+      display: none; }
     .catalog .filters .head-text {
       font-size: 18px;
       text-transform: uppercase;
@@ -753,6 +761,14 @@ footer {
       font-family: AvenirNextRegular;
       cursor: pointer;
       text-align: left; }
+    .catalog .filters .inner-head-text {
+      font-size: 20px;
+      font-family: AvenirNextRegular;
+      color: #3c3c3c;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 60px;
+      display: none; }
     .catalog .filters .show-more {
       font-family: AvenirNextRegular;
       font-size: 16px;
@@ -793,7 +809,10 @@ footer {
           height: 12px;
           background-color: #ff2149;
           border-radius: 3px; }
-    .catalog .filters > div {
+    .catalog .filters .filter-container {
+      position: relative; }
+    .catalog .filters .checked-filters,
+    .catalog .filters .filter {
       background-color: #f2f2f2;
       padding: 15px 0;
       margin-bottom: 12px; }
@@ -1087,5 +1106,25 @@ footer {
       font-family: AvenirNextRegular;
       font-size: 18px;
       display: none; }
+
+.overlay-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: #000;
+  opacity: 0;
+  display: none;
+  z-index: 100;
+  transition: opacity ease .5s; }
+
+.overlay-mask.show {
+  display: block;
+  opacity: .3; }
+
+body.noscroll {
+  overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */

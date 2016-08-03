@@ -45,7 +45,11 @@
 
     function filterDesktopHide () {
         $('.filters .filter .head-text').click(function(){
-            $(this).parent().toggleClass('hidden')
+            if($(window).width() <= 900) {
+                $(this).parent().toggleClass('active').siblings().removeClass('active')
+            } else{
+                $(this).parent().toggleClass('hidden')
+            }
         })
     }
 
@@ -66,4 +70,8 @@
         toogleDesignersTabs();
     });
 })();
+
+Filters = {};
+
+
 

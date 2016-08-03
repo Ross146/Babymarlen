@@ -11,8 +11,9 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 </head>
-<body>
+<body class="noscroll">
 <div class="container-main">
+    <div class="overlay-mask show"></div>
     <header>
         <div class="top-header">
             <div class="tel-wrapper">
@@ -58,7 +59,7 @@
             </ul>
         </div>
         <div class="mobile-back-btn">Назад</div>
-        <div class="filters">
+        <div class="filters mobile-active">
             <div class="checked-filters">
                 <div class="head-text">Вы выбрали</div>
                 <a href="#" class="clear-text">очистить всё</a>
@@ -68,107 +69,138 @@
                     <li class="filter-item" data-href="#"><span class="plus">+</span>20000-24000 грн.<span class="count">(434)</span></li>
                     <li class="filter-item color" data-href="#"><span class="plus">+</span>Бежевый<span class="count">(434)</span></li>
                 </ul>
+                <a href="#" class="clear-text-mobile">очистить всё</a>
                 <a href="#" class="submit">Применить</a>
             </div>
-            <div class="filter">
-                <div class="head-text">Для кого</div>
-                <ul>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Одежда<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Обувь<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Аксессуары<span class="count">(434)</span></li>
-                </ul>
-            </div>
-            <div class="filter">
-                <div class="head-text">Подкатегория</div>
-                <ul>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Аксессуар<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Балетки<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Берет<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Блуза<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Балеро<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Босоножки<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Ботинки<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Брюки<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Брюки в.о.<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Варежки<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Вьетнамки<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Гольф<span class="count">(434)</span></li>
-                </ul>
-                <span href="#" class="show-more">показать всё</span>
-            </div>
-            <div class="filter filter-price">
-                <div class="head-text">Цена</div>
-                <form>
-                    <div data-role="rangeslider">
-                        <div class="top">
-                            <input type="text" value="от">
-                            <span>-</span>
-                            <input type="text" value="до">
-                            <input type="submit" value="OK">
-                        </div>
-                        <div class="bottom">
-                            <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40">
-                            <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
-                        </div>
-
+            <div class="filter-container">
+                <div class="filter">
+                    <div class="head-text">Для кого</div>
+                    <div class="ul-container">
+                        <div class="inner-head-text">Для кого</div>
+                        <ul>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Одежда<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Обувь<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Аксессуары<span class="count">(434)</span></li>
+                        </ul>
                     </div>
-                </form>
-            </div>
 
-            <div class="filter">
-                <div class="head-text">Размер</div>
-                <ul>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>0-1 мес.<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>0-3 мес.<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>3-6 мес.<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>6-9 мес.<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>9-12 мес.<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>12-18 мес.<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>18-24 мес.<span class="count">(434)</span></li>
-                </ul>
-                <span href="#" class="show-more">показать всё</span>
-            </div>
+                </div>
+                <div class="filter active">
+                    <div class="head-text">Подкатегория</div>
+                    <div class="ul-container">
+                        <div class="inner-head-text">Подкатегория</div>
+                        <ul>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Аксессуар<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Балетки<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Берет<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Блуза<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Балеро<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Босоножки<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Ботинки<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Брюки<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Брюки в.о.<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Варежки<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Вьетнамки<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Гольф<span class="count">(434)</span></li>
+                        </ul>
+                    </div>
 
-            <div class="filter">
-                <div class="head-text">Размер обуви</div>
-                <ul>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>19<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>20<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>21<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>22<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>23<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>24<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>25<span class="count">(434)</span></li>
-                </ul>
-                <span href="#" class="show-more">показать всё</span>
-            </div>
+                    <span href="#" class="show-more">показать всё</span>
+                </div>
+                <div class="filter filter-price">
+                    <div class="head-text">Цена</div>
+                    <div class="ul-container">
+                        <div class="inner-head-text">Цена</div>
+                        <form>
+                            <div data-role="rangeslider">
+                                <div class="top">
+                                    <input type="text" value="от">
+                                    <span>-</span>
+                                    <input type="text" value="до">
+                                    <input type="submit" value="OK">
+                                </div>
+                                <div class="bottom">
+                                    <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40">
+                                    <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
+                                </div>
 
-            <div class="filter">
-                <div class="head-text">Цвет</div>
-                <ul>
-                    <li class="filter-item color" data-href="#"><span class="plus">+</span>бежевый<span class="count">(434)</span></li>
-                    <li class="filter-item color" data-href="#"><span class="plus">+</span>белый<span class="count">(434)</span></li>
-                    <li class="filter-item color" data-href="#"><span class="plus">+</span>бирюзовый<span class="count">(434)</span></li>
-                    <li class="filter-item color" data-href="#"><span class="plus">+</span>бордовый<span class="count">(434)</span></li>
-                    <li class="filter-item color" data-href="#"><span class="plus">+</span>васильковый<span class="count">(434)</span></li>
-                    <li class="filter-item color" data-href="#"><span class="plus">+</span>голубой<span class="count">(434)</span></li>
-                    <li class="filter-item color" data-href="#"><span class="plus">+</span>жёлтый<span class="count">(434)</span></li>
-                </ul>
-                <span href="#" class="show-more">показать всё</span>
-            </div>
+                            </div>
+                        </form>
+                    </div>
 
-            <div class="filter">
-                <div class="head-text">Бренд</div>
-                <ul>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Birkenstock<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Burberry<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Diesel<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Dolce & Gabbana<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>DSQUARED2<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>John Galliano<span class="count">(434)</span></li>
-                    <li class="filter-item" data-href="#"><span class="plus">+</span>Kissy Kissy<span class="count">(434)</span></li>
-                </ul>
-                <span href="#" class="show-more">показать всё</span>
+                </div>
+
+                <div class="filter">
+                    <div class="head-text">Размер</div>
+                    <div class="ul-container">
+                        <div class="inner-head-text">Размер</div>
+                        <ul>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>0-1 мес.<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>0-3 мес.<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>3-6 мес.<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>6-9 мес.<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>9-12 мес.<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>12-18 мес.<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>18-24 мес.<span class="count">(434)</span></li>
+                        </ul>
+                    </div>
+
+                    <span href="#" class="show-more">показать всё</span>
+                </div>
+
+                <div class="filter">
+                    <div class="head-text">Размер обуви</div>
+                    <div class="ul-container">
+                        <div class="inner-head-text">Размер обуви</div>
+                        <ul>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>19<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>20<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>21<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>22<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>23<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>24<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>25<span class="count">(434)</span></li>
+                        </ul>
+                    </div>
+
+                    <span href="#" class="show-more">показать всё</span>
+                </div>
+
+                <div class="filter">
+                    <div class="head-text">Цвет</div>
+                    <div class="ul-container">
+                        <div class="inner-head-text">Цвет</div>
+                        <ul>
+                            <li class="filter-item color" data-href="#"><span class="plus">+</span>бежевый<span class="count">(434)</span></li>
+                            <li class="filter-item color" data-href="#"><span class="plus">+</span>белый<span class="count">(434)</span></li>
+                            <li class="filter-item color" data-href="#"><span class="plus">+</span>бирюзовый<span class="count">(434)</span></li>
+                            <li class="filter-item color" data-href="#"><span class="plus">+</span>бордовый<span class="count">(434)</span></li>
+                            <li class="filter-item color" data-href="#"><span class="plus">+</span>васильковый<span class="count">(434)</span></li>
+                            <li class="filter-item color" data-href="#"><span class="plus">+</span>голубой<span class="count">(434)</span></li>
+                            <li class="filter-item color" data-href="#"><span class="plus">+</span>жёлтый<span class="count">(434)</span></li>
+                        </ul>
+                    </div>
+
+                    <span href="#" class="show-more">показать всё</span>
+                </div>
+
+                <div class="filter">
+                    <div class="head-text">Бренд</div>
+                    <div class="ul-container">
+                        <div class="inner-head-text">Бренд</div>
+                        <ul>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Birkenstock<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Burberry<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Diesel<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Dolce & Gabbana<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>DSQUARED2<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>John Galliano<span class="count">(434)</span></li>
+                            <li class="filter-item" data-href="#"><span class="plus">+</span>Kissy Kissy<span class="count">(434)</span></li>
+                        </ul>
+                    </div>
+
+                    <span href="#" class="show-more">показать всё</span>
+                </div>
             </div>
 
         </div>

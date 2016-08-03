@@ -604,7 +604,119 @@
   }
   .catalog{
     .filters{
-      display: none;
+      position: absolute;
+      top: 0;
+      right: -100%;
+      width: calc(100% - 40px);
+      height: 100%;
+      margin-right: 0;
+      z-index: 100;
+      margin-left: 40px;
+      transition: right ease 1s;
+      overflow: auto;
+      background-color: #fff;
+      &.mobile-active{
+        right: 0;
+      }
+      .checked-filters,
+      .filter{
+        margin-bottom: 0;
+      }
+      .checked-filters{
+        background-color: $light-grey;
+        text-align: center;
+        padding-bottom: 36px;
+        border-bottom: 1px solid #fff;
+        .head-text{
+          padding: 0;
+          text-align: center;
+          font-size: 22px;
+          margin-bottom: 23px;
+        }
+        .clear-text{
+          display: none;
+        }
+        .clear-text-mobile,
+        .submit{
+          display: inline-block;
+          width: 154px;
+          margin: 25px 2.5px 0;
+          color: #4a4a4a;
+        }
+        .submit{
+          background-color: $greyish-brown;
+          color: $light-grey;
+        }
+        .filter-item{
+          display: inline-block;
+          border: 1px solid #3c3c3c;
+          border-radius: 3px;
+          line-height: 30px;
+          font-size: 14px;
+          padding: 0 10px;
+          color: $greyish-brown;
+          margin: 5px;
+
+        }
+      }
+      .filter{
+        background-color: #fff;
+        padding: 0;
+        width: 30%;
+        .filter-item{
+          line-height: 41px;
+          font-size: 20px;
+        }
+        .head-text{
+          margin-bottom: 0;
+          line-height: 52px;
+          border-bottom: 1px solid #fff;
+          background-color: $grey-blue;
+          &:after{
+            top: calc(50% - 11px);
+            right: 2%;
+            width: 23px;
+            height: 23px;
+            transform: rotate(90deg);
+          }
+        }
+        .inner-head-text{
+          display: block;
+        }
+        .show-more{
+          display: none;
+        }
+        .ul-container{
+          position: absolute;
+          top: 0;
+          left: 30%;
+          width: 70%;
+          display: none;
+          ul{
+            margin-left: 8%;
+            border-top: 1px solid #e2e2e2;
+            max-height: none;
+            li{
+              padding: 0;
+              border-bottom: 1px solid #e2e2e2;
+            }
+          }
+        }
+        &.active{
+          .head-text{
+            background-color: #4a4a4a;
+            color: #fff;
+          }
+          .ul-container{
+            display:block;
+          }
+        }
+        &.hidden{
+          &:after{
+            transform: rotate(90deg);
+          }
+        }
+      }
     }
     .main-content{
       width: 100%;
