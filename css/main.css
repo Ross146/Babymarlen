@@ -753,6 +753,8 @@ footer {
         background-color: #a5a5a5; }
     .catalog .filters .checked-filters .clear-text-mobile {
       display: none; }
+    .catalog .filters .checked-filters .filter-item:before {
+      transform: rotate(45deg); }
     .catalog .filters .head-text {
       font-size: 18px;
       text-transform: uppercase;
@@ -782,33 +784,34 @@ footer {
       transition: line-height ease .3s;
       overflow: hidden; }
     .catalog .filters .filter-item {
+      position: relative;
       font-size: 15px;
       line-height: 21px;
       display: block;
       font-family: AvenirNextRegular;
       color: #000000;
-      padding: 0 3%;
+      padding: 0 5px 0 30px;
       cursor: pointer; }
-      .catalog .filters .filter-item .plus {
-        padding: 0 5px; }
+      .catalog .filters .filter-item:before {
+        content: '+';
+        position: absolute;
+        left: 12px;
+        top: 0;
+        width: 12px;
+        height: 12px;
+        font-size: 20px; }
       .catalog .filters .filter-item .count {
         float: right;
         color: #9b9b9b; }
       .catalog .filters .filter-item:hover {
         color: #616161; }
-      .catalog .filters .filter-item.color {
-        position: relative; }
-        .catalog .filters .filter-item.color .plus {
-          padding-right: 30px; }
-        .catalog .filters .filter-item.color:before {
-          content: '';
-          position: absolute;
-          left: 32px;
-          top: 5px;
-          width: 12px;
-          height: 12px;
-          background-color: #ff2149;
-          border-radius: 3px; }
+      .catalog .filters .filter-item .color {
+        width: 12px;
+        height: 12px;
+        background-color: #ff2149;
+        border-radius: 3px;
+        display: inline-block;
+        margin-right: 5px; }
     .catalog .filters .filter-container {
       position: relative; }
     .catalog .filters .checked-filters,
@@ -1120,11 +1123,17 @@ footer {
   z-index: 100;
   transition: opacity ease .5s; }
 
-.overlay-mask.show {
-  display: block;
-  opacity: .3; }
+body {
+  transition: transform ease 1s, opacity ease .5s; }
 
-body.noscroll {
-  overflow: hidden; }
+.overlay-mask {
+  transition: opacity ease 1s; }
+
+body.openfilter {
+  overflow: hidden;
+  transform: translateX(calc(-100% + 40px)); }
+  body.openfilter .overlay-mask {
+    display: block;
+    opacity: .5; }
 
 /*# sourceMappingURL=main.css.map */

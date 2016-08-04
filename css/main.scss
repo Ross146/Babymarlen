@@ -943,6 +943,11 @@ footer{
       .clear-text-mobile{
         display: none;
       }
+      .filter-item{
+        &:before{
+          transform: rotate(45deg);
+        }
+      }
     }
     .head-text{
       font-size: 18px;
@@ -976,15 +981,22 @@ footer{
       overflow: hidden;
     }
     .filter-item{
+      position: relative;
       font-size: 15px;
       line-height: 21px;
       display: block;
       font-family: AvenirNextRegular;
       color: #000000;
-      padding: 0 3%;
+      padding: 0 5px 0 30px;
       cursor: pointer;
-      .plus{
-        padding: 0 5px;
+      &:before{
+        content:'+';
+        position: absolute;
+        left: 12px;
+        top: 0;
+        width: 12px;
+        height: 12px;
+        font-size: 20px;
       }
       .count{
         float: right;
@@ -993,21 +1005,13 @@ footer{
       &:hover{
         color: #616161;
       }
-      &.color{
-        position: relative;
-        .plus{
-          padding-right: 30px;
-        }
-        &:before{
-          content:'';
-          position: absolute;
-          left: 32px;
-          top: 5px;
-          width: 12px;
-          height: 12px;
-          background-color: #ff2149;
-          border-radius: 3px;
-        }
+      .color{
+        width: 12px;
+        height: 12px;
+        background-color: #ff2149;
+        border-radius: 3px;
+        display: inline-block;
+        margin-right: 5px;
       }
     }
     .filter-container{
@@ -1388,14 +1392,20 @@ footer{
   transition: opacity ease .5s;
 }
 
-.overlay-mask.show{
-  display: block;
-  opacity: .3;
+body{
+  transition: transform ease 1s, opacity ease .5s;
+}
+.overlay-mask{
+  transition: opacity ease 1s;
 }
 
-body.noscroll{
+body.openfilter{
   overflow:hidden;
-  //padding-right: 15px;
+  transform: translateX(calc(-100% + 40px));
+  .overlay-mask{
+    display: block;
+    opacity: .5;
+  }
 }
 
 

@@ -354,7 +354,7 @@
   .catalog .filters {
     position: absolute;
     top: 0;
-    right: -100%;
+    right: calc(-100% + 40px);
     width: calc(100% - 40px);
     height: 100%;
     margin-right: 0;
@@ -363,8 +363,6 @@
     transition: right ease 1s;
     overflow: auto;
     background-color: #fff; }
-    .catalog .filters.mobile-active {
-      right: 0; }
     .catalog .filters .checked-filters,
     .catalog .filters .filter {
       margin-bottom: 0; }
@@ -395,16 +393,27 @@
         border-radius: 3px;
         line-height: 30px;
         font-size: 14px;
-        padding: 0 10px;
         color: #3c3c3c;
-        margin: 5px; }
+        margin: 5px;
+        padding-left: 20px; }
+        .catalog .filters .checked-filters .filter-item:before {
+          top: 2px; }
+        .catalog .filters .checked-filters .filter-item .count {
+          margin-left: 5px; }
     .catalog .filters .filter {
       background-color: #fff;
       padding: 0;
-      width: 30%; }
+      width: 30%;
+      min-width: 190px; }
       .catalog .filters .filter .filter-item {
         line-height: 41px;
-        font-size: 20px; }
+        font-size: 20px;
+        padding-right: 45%;
+        padding-left: 0;
+        border-bottom: 1px solid #e2e2e2; }
+        .catalog .filters .filter .filter-item:before {
+          left: auto;
+          right: 5%; }
       .catalog .filters .filter .head-text {
         margin-bottom: 0;
         line-height: 52px;
@@ -415,7 +424,7 @@
           right: 2%;
           width: 23px;
           height: 23px;
-          transform: rotate(90deg); }
+          transform: rotate(90deg) !important; }
       .catalog .filters .filter .inner-head-text {
         display: block; }
       .catalog .filters .filter .show-more {
@@ -430,9 +439,6 @@
           margin-left: 8%;
           border-top: 1px solid #e2e2e2;
           max-height: none; }
-          .catalog .filters .filter .ul-container ul li {
-            padding: 0;
-            border-bottom: 1px solid #e2e2e2; }
       .catalog .filters .filter.active .head-text {
         background-color: #4a4a4a;
         color: #fff; }
@@ -440,6 +446,8 @@
         display: block; }
       .catalog .filters .filter.hidden:after {
         transform: rotate(90deg); }
+      .catalog .filters .filter.hidden form {
+        max-height: none; }
   .catalog .main-content {
     width: 100%; }
     .catalog .main-content .banners .banner .img-wrap {
@@ -517,7 +525,13 @@
 
   .designers .tabs-container .tabs .tab .tab-content ul li a {
     font-size: 12px;
-    line-height: 28px; } }
+    line-height: 28px; }
+
+  .catalog .filters .filter .ul-container {
+    width: calc(100% - 190px);
+    left: 190px; }
+  .catalog .filters .filter .filter-item {
+    padding-right: 20%; } }
 @media only screen and (max-width: 550px) {
   .section-banners .items {
     height: 225px; }
@@ -752,7 +766,54 @@
   .catalog .main-content .mobile-showmore-btn {
     display: block; }
   .catalog .bread-crumbs {
-    display: none; } }
+    display: none; }
+
+  .catalog .filters {
+    max-height: 100vh; }
+    .catalog .filters .checked-filters .clear-text-mobile,
+    .catalog .filters .checked-filters .submit {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      max-width: none; }
+    .catalog .filters .checked-filters .clear-text-mobile {
+      margin-top: 25px;
+      margin-bottom: 8px; }
+    .catalog .filters .filter {
+      width: 100%; }
+      .catalog .filters .filter .ul-container {
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: left ease .5s;
+        background-color: #fff;
+        z-index: 1;
+        display: block; }
+        .catalog .filters .filter .ul-container ul {
+          overflow: hidden;
+          height: calc(100vh - 60px);
+          overflow-y: scroll; }
+      .catalog .filters .filter .inner-head-text {
+        position: relative; }
+        .catalog .filters .filter .inner-head-text:before {
+          content: '';
+          position: absolute;
+          width: 29px;
+          height: 29px;
+          left: 15px;
+          top: 15px;
+          background: url(../images/mobile-designers-arrow.png) no-repeat center;
+          transform: rotate(-90deg);
+          background-size: 29px; }
+      .catalog .filters .filter.active .head-text {
+        background-color: #f2f6f7;
+        color: #000; }
+      .catalog .filters .filter.active .ul-container {
+        left: 0; }
+    .catalog .filters .filter-container {
+      position: static; }
+    .catalog .filters.no-max-height {
+      max-height: none; } }
 @media only screen and (max-width: 380px) {
   .section-main .section-category .mobile-category-items a:nth-child(2) {
     width: 40%; }
