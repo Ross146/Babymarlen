@@ -694,7 +694,16 @@ footer {
     vertical-align: top; }
   .catalog .filters {
     width: 16.6%;
-    margin-right: 1.6%; }
+    margin-right: 1.6%;
+    position: relative; }
+    .catalog .filters .close-btn {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 28px;
+      height: 28px;
+      background: url("../images/close-btn.svg"); }
     .catalog .filters .filter .head-text {
       position: relative; }
       .catalog .filters .filter .head-text:after {
